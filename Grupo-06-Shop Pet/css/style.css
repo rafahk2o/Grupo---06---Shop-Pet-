@@ -48,6 +48,7 @@ time, mark, audio, video {
     justify-content: space-around;
     align-items: center;
     color: #eee;
+    gap: 600px;
 }
 /*Inicio do logo*/
 header .box-logo{
