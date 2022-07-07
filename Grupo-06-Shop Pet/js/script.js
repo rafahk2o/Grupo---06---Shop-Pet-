@@ -1,4 +1,4 @@
-// Barra de pesquisa
+//Barra de pesquisa
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
@@ -7,13 +7,13 @@ document.querySelector('#search-btn').onclick = () =>{
     loginForm.classList.remove('active');
 };
 
-// Carrinho de compra
+//Carrinho de compra
 let cart = document.querySelector('.shopping-cart');
 
 document.querySelector('#cart-btn').onclick = () =>{
     cart.classList.toggle('active');
     searchForm.classList.remove('active');
-    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
 }
 
 //Formulário do login
@@ -24,3 +24,13 @@ document.querySelector('#login-btn').onclick = () =>{
     searchForm.classList.remove('active');
     cart.classList.remove('active');
 }
+
+//Banner Rotativo
+let banner = 1;
+setInterval(function(){
+    document.getElementById('radio' + banner).checked = true;
+    banner++;
+    if(banner > 2){
+        banner = 1;
+    }
+}, 5000);
