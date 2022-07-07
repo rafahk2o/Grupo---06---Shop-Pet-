@@ -364,6 +364,7 @@ label{
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    margin-top: 45px;
 }
 .manual-btn:not(last-child){
     margin-right: 25px;
@@ -385,7 +386,7 @@ label{
     display: flex;
     width: 800px;
     justify-content: end;
-    margin-top: 460px;
+    margin-top: 505px;
 }
 .nav-auto div{
     border: 2px solid #264653;
