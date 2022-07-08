@@ -311,3 +311,61 @@ label{
 
 /*Término da barra de navegação*/
 /*Cabeçalho término*/
+
+
+/**Início da sessão de produtos*/
+
+#produtoscontainer{
+    grid-area: "main";
+}
+#produtosrow1{    
+    display: flex;
+    width:100%;  
+    align-items: center;
+    justify-content: center;
+}
+#produtosrow2{
+    display: flex;
+    width:100%;  
+    align-items: center;
+    justify-content: center;
+}
+#produtosrow3{
+    display: flex;
+    width:100%;  
+    align-items: center;
+    justify-content: center;
+}
+.imagem{ 
+    transition: 2s;  
+    display:block;
+    width:200px;    
+}
+
+.boxproduto{
+    position:relative;
+    height:200px;
+    width:200px; 
+    padding: 20px;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    transition:1.5s;
+}
+.overlay:hover{
+    opacity:1;
+}
+.linkcompra{
+    text-decoration:none;
+    color: #fff;
+}

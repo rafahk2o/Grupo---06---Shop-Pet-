@@ -8,8 +8,8 @@
     <meta name="author" content="Nicolas Moura">
     <!--Link CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="/Grupo-06-Shop Pet/css/style.css">
-    <link rel="stylesheet" href="/Grupo-06-Shop Pet/css/paginaprodutos.css" <title>Shop Pet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shop Pet</title>
 </head>
 
 <body>
@@ -18,7 +18,9 @@
         <header class="header">
             <!--Logo-->
             <div class="box-logo">
-                <h1 class="logo"><span>Shop Pet</span></h1>
+                <h1 class="logo">
+                    <span>Shop Pet</span>
+                </h1>
             </div>
             <!--Navegação cabeçalho-->
             <nav class="navbar">
@@ -27,16 +29,36 @@
                     <li>
                         <a href="#compras">Ir ás compras &#9660;</a>
                         <ul class="dropdown">
-                            <li><a href="#">Acessórios</a></li>
-                            <li><a href="#">Remédios</a></li>
-                            <li><a href="#">Rações</a></li>
-                            <li><a href="#">Brinquedos</a></li>
-                            <li><a href="#">Não sei 1</a></li>
-                            <li><a href="#">Não sei 2</a></li>
-                            <li><a href="#">Não sei 3</a></li>
-                            <li><a href="#">Não sei 4</a></li>
-                            <li><a href="#">Não sei 5</a></li>
-                            <li><a href="#">Não sei 6</a></li>
+                            <li>
+                                <a href="#">Acessórios</a>
+                            </li>
+                            <li>
+                                <a href="#">Remédios</a>
+                            </li>
+                            <li>
+                                <a href="#">Rações</a>
+                            </li>
+                            <li>
+                                <a href="#">Brinquedos</a>
+                            </li>
+                            <li>
+                                <a href="#">Não sei 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Não sei 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Não sei 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Não sei 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Não sei 5</a>
+                            </li>
+                            <li>
+                                <a href="#">Não sei 6</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -88,68 +110,104 @@
                     <label for="remember-me">Lembrar de mim</label>
                 </div>
                 <input type="submit" value="Entre Agora" class="btn-login-form">
-                <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
-                <p>Não tem uma conta ainda? <a href="#">Crie uma agora</a></p>
+                <p>Esqueceu a senha?
+                    <a href="#">Clique aqui</a>
+                </p>
+                <p>Não tem uma conta ainda?
+                    <a href="#">Crie uma agora</a>
+                </p>
             </form>
         </header>
         <!--Término do cabeçalho-->
 
         <!-- Inicio do corpo -->
         <main class="main">
+            <div id="produtoscontainer">
+                <div id="produtosrow1">
+                    <div class="boxproduto">
 
-            <div id="produtosrow1"></div>
-            <div class="boxproduto">
-                <picture>
-                    <img class="imagem" src="img/produto1.jpeg" </picture>
-                    <a class="linkcompra" href="#">Combo cão feliz</a>
-            </div>
-            <div class="boxproduto">
-                <picture>
-                    <img class="imagem" src="img/produto2.jpeg" </picture>
-                    <a class="linkcompra" href="#">Kit cão perfumado</a>
-            </div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto3.jpeg" </picture>
-                    <a class="linkcompra" href="#">Sanitário Pet</a>
-            </div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto4.jpeg" </picture>
-                    <a class="linkcompra" href="#">Comedor automático</a>
-            </div>
-            <div id="produtosrow2"></div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto5.jpeg" </picture>
-                    <a class="linkcompra" href="#">Cumbuca transparente</a>
-            </div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto6.jpeg" </picture>
-                <a class="linkcompra" href="#">Comprimidos para carrapatos</a>
-            </div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto7.jpeg" </picture>
-                <a class="linkcompra" href="#">Biscrok</a>
-            </div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto8.jpeg" </picture>
-                <a class="linkcompra" href="#">Traqueia bovina</a>
-            </div>
-            <div id="produtosrow3"></div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto9.jpeg" </picture>
-                <a class="linkcompra" href="#">Ração nutrópica para papagaios</a>
-            </div>
-            <div class="boxproduto"> 
-                <picture><img class="imagem" src="img/produto10.jpeg" </picture>
-                    <a class="linkcompra" href="#">Tubo para hamster</a></div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto11.jpeg" </picture>
-                <a class="linkcompra" href="#">Bebedouro automático</a>
-            </div>
-            <div class="boxproduto">
-                <picture><img class="imagem" src="img/produto12.jpeg" </picture>
-                <a class="linkcompra" href="#">Néctar para beija-flor</a>
-            </div>
+                        <img class="imagem" src="img/produto1.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Combo cão feliz</a>
+                        </div>
+                    </div>
+                    <div class="boxproduto">
+                        <img class="imagem" src="img/produto2.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Kit cão perfumado</a>
+                        </div>
+                    </div>
+                    <div class="boxproduto">
+                        <img class="imagem" src="img/produto3.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Sanitário Pet</a>
+                        </div>
+                    </div>
+                    <div class="boxproduto">
+                        <img class="imagem" src="img/produto4.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Comedor automático</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="produtosrow2">
+                    <div class="boxproduto">
 
+                        <img class="imagem" src="img/produto5.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Cumbuca transparente</a>
+                        </div>
+                    </div>
+                    <div class="boxproduto">
+                        <img class="imagem" src="img/produto6.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Comprimidos para carrapatos</a>
+                        </div>
+                    </div>
+                    <div class="boxproduto">
+
+                        <img class="imagem" src="img/produto7.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Biscrok</a>
+                        </div>
+                    </div>
+                    <div class="boxproduto">
+                        <img class="imagem" src="img/produto8.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Traqueia bovina</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="produtosrow3">
+                    <div class="boxproduto">
+                        <img class="imagem" src="img/produto9.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Ração nutrópica para papagaios</a>
+                        </div>
+                    </div>
+                    <div class="boxproduto">
+
+                        <img class="imagem" src="img/produto10.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Tubo para hamster</a>
+                        </div>
+                    </div>
+
+                    <div class="boxproduto">
+
+                        <img class="imagem" src="img/produto11.jpeg">
+                        <div class="overlay">
+                            <a class="linkcompra" href="#">Bebedouro automático</a>
+                        </div>
+                    </div>
+                    <div class="boxproduto">
+                            <img class="imagem" src="img/produto12.jpeg">
+                            <div class="overlay">
+                            <a class="linkcompra" href="#">Néctar para beija-flor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- Término do corpo -->
 
@@ -160,8 +218,7 @@
         <!-- Término do rodapé -->
     </div>
     <!--Link JavaScript-->
-    <script type="text/javascript" src="/Grupo-06-Shop Pet/js/script.js"></script>
-    <script type="text/javascript" src="/Grupo-06-Shop Pet/js/paginaprodutos.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
