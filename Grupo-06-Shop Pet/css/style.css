@@ -336,10 +336,10 @@ label{
     align-items: center;
     justify-content: center;
 }
-.imagem{ 
-    transition: 2s;  
+.imagem{  
     display:block;
-    width:200px;    
+    width:200px;  
+    text-align: center;
 }
 
 .boxproduto{
@@ -347,25 +347,31 @@ label{
     height:200px;
     width:200px; 
     padding: 20px;
+    cursor: pointer;
 }
 .overlay{
     position:absolute;
-    top:0;
+    bottom:0;
     left:0;
     width:100%;
-    height:100%;
-    background: rgba(0, 0, 0, 0.6); 
+    height: 40px;
+    background: #06d6a0; 
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity:0;
-    transition:1.5s;
+    transition: 1s;
 }
-.overlay:hover{
+.boxproduto:hover .overlay{
     opacity:1;
 }
 .linkcompra{
     text-decoration:none;
     color: #fff;
+    transition: 0.5s;
+}
+.linkcompra:hover{
+       transform:translate(0,-20%);
+       transition: 0.5s;    
 }
