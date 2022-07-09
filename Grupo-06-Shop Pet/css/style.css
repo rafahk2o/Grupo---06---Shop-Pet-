@@ -483,8 +483,8 @@ label {
     font-size: 6rem;
     font-weight: bolder;
     right: 6rem;
-    animation: moveBanner 1s 0.5s forwards;
-    text-shadow: 1px 1px 3px #fff;
+    animation: moveBanner 2s 0.5s forwards;
+    text-shadow: 1px 1px 20px #fff;
 
 }
 
@@ -494,8 +494,8 @@ label {
     margin-top: 19%;
     font-size: 2rem;
     right: 8rem;
-    animation: moveBanner 1s 0.7s forwards;
-    text-shadow: 1px 1px 3px #fff;
+    animation: moveBanner 2s 0.7s forwards;
+    text-shadow: 1px 1px 20px #fff;
 
 }
 
@@ -512,21 +512,57 @@ label {
 }
 
 /* Término do banner sessão veterinário */
-/* icons services fontawesome */
+/* icons services */
 
 .icons-services {
     display: flex;
     list-style: none;
     margin-top: 45%;
     justify-content: space-around;
+    align-items: flex-end;
+    gap: 0.4rem;
+
+}
+
+.icons-services1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    text-align: center;
+}
+
+.icons-services2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons-services3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons-services4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
 .icons-services img {
     width: 10rem;
     opacity: 0.3;
-    transition: .5s;
+    transition: 0.5s;
     filter: grayscale(100%);
+
 }
 
 .icons-services img:hover {
@@ -535,5 +571,48 @@ label {
     transition: 0.5s;
     transform: translate(0%, -10%);
     filter: grayscale(0%);
+
+}
+
+.icons-services h2 {
+    color: #ef476f;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons-services-text1 {
+    width: 20%;
+    margin-left: 3rem;
+
+}
+
+.icons-services-text2 {
+    width: 20%;
+    margin-left: 29rem;
+    top: 1rem;
+
+}
+
+/* final icons services */
+
+.conteudo-central {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #118ab2;
+}
+
+
+.content-left-vet {
+    width: 50%;
+
+
+}
+
+.content-left-vet img {
+    width: 100%;
+    
 
 }
