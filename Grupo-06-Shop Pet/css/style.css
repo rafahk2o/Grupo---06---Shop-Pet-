@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300&display=swap');
 
-html, body, div, span, applet, object, iframe, 
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -35,6 +35,7 @@ time, mark, audio, video {
     display:grid;
     grid-template-columns: 100%;
     grid-template-areas: "header" "main" "footer";
+    grid-row-gap: 1.1%
 }
 /*Cabeçalho inicio*/
 #container header{
@@ -50,7 +51,7 @@ time, mark, audio, video {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     color: #eee;
     gap: 600px;
@@ -73,7 +74,7 @@ header .logo:hover{
 /*Barra de navegação, modificando dropdown menu e icones*/
 .navbar{
     position:fixed;
-    display: flex; 
+    display: flex;
 }
 /*Dropdown menu*/
 .dropdown{
@@ -196,7 +197,6 @@ label{
     display: inline-block;
     top: 120%; right: 2rem;
     transition: .16s linear;
-
 }
 .box-cart-buy{
     display: flex;
@@ -311,100 +311,45 @@ label{
 /*Término da barra de navegação*/
 /*Cabeçalho término*/
 
-/* Inicio do corpo */
-#container .main{
-    grid-area: main;
-    position: relative;
-    top:0; left: 0; right:0;
-    background:#fff;
-    padding: 2px 0px;
-    display: flex;
-    justify-content: center;
-    box-sizing:border-box;
-    box-shadow: 1px 2px 10px rgb(143, 143, 143,0.9);
-    z-index: 998px;
-    display: flex;
-    flex-direction: column;
+
+/**Início da sessão do produto*/
+
+#principal{
+    grid-area: "main";
+} 
+#containersuperior{
+    display:flex; 
+    justify-content: space-between;
+    margin:30px 50px 0 50px;
 }
-.main-container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding-top: 35px;
+#imagemproduto{
+    width:400px;
+    height:400px;
+    background-color: #e9c46a;
 }
-/* Inicio do banner rotativo */
-.slider{
-    width: 400%;
-    height: 500px;
-    border-radius: 6px;
-    overflow: hidden;
-    margin-top: -37px;
+#precoproduto{
+    width:600px;
+    height:100px;
+    right:30px;  
+    background-color: aqua; 
 }
-.slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
+#parcelasproduto{
+    width:600px;
+    height:100px;
+    right: 30px;  
+
+    background-color: #000;
 }
-.slides input{
-    display: none;
+#comprar{
+    width:200px;
+    height:100px;
+    right:330px;
+    margin-top:100px;
 }
-.slide{
-    width: 20%;
-    transition: 2s;
+#carrinho{
+    width:200px;
+    height:100px;
+    right: 30px;
+    margin-top:100px;
+    margin-left:200px;
 }
-.nav-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: end;
-}
-.manual-btn{
-    border: 2px solid #e9c46a;
-    padding: 6px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.manual-btn:not(last-child){
-    margin-right: 25px;
-}
-.manual-btn:hover{
-    background: #f4a261;
-}
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-.nav-auto{
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: end;
-    margin-top: 460px;
-}
-.nav-auto div{
-    border: 2px solid #264653;
-    padding: 6px;
-    border-radius: 10px;
-    transition: 1s;
-}
-.nav-auto div:not(last-child){
-    margin-right: 25px;
-}
-#radio:checked ~ .nav-auto .auto-btn1{
-    background: #e9c46a;
-}
-#radio:checked ~ .nav-auto .auto-btn2{
-    background: #e9c46a;
-}
-.img-banner{
-    width: 100%;
-}
-/* Término do banner rotativo */
-/* Término do corpo */
