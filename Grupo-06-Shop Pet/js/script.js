@@ -38,7 +38,7 @@ let contentText3 = document.querySelector(".btn-content-content3");
 btn1.addEventListener("click", () => {
     event.preventDefault();
     cardRight.style.background = "#8DD9E9";
-    contentText1.style.display = "block";
+    contentText1.style.display = "flex";
     contentText2.style.display = "none";
     contentText3.style.display = "none";
     
@@ -49,7 +49,7 @@ btn2.addEventListener("click", () => {
     event.preventDefault();
     cardRight.style.background = "#479BAC";
     contentText1.style.display = "none";
-    contentText2.style.display = "block";
+    contentText2.style.display = "flex";
     contentText3.style.display = "none";
     
 });
@@ -59,7 +59,7 @@ btn3.addEventListener("click", () => {
     cardRight.style.background = "#11778B";
     contentText1.style.display = "none";
     contentText2.style.display = "none";
-    contentText3.style.display = "block";
+    contentText3.style.display = "flex";
     
     
 });
