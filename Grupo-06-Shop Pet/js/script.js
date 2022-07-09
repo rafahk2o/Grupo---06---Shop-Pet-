@@ -25,12 +25,47 @@ document.querySelector('#login-btn').onclick = () => {
     cart.classList.remove('active');
 }
 
-//Banner Rotativo
-// let banner = 1;
-// setInterval(function () {
-//     document.getElementById('radio' + banner).checked = true;
-//     banner++;
-//     if (banner > 2) {
-//         banner = 1;
-//     }
-// }, 5000);
+// fim conteúdo central cards azuis
+let btn1 = document.querySelector("#btn-content-vet1-btn");
+let btn2 = document.querySelector("#btn-content-vet2-btn");
+let btn3 = document.querySelector("#btn-content-vet3-btn");
+let cardRight = document.querySelector(".content-right-vet");
+let contentText1 = document.querySelector(".btn-content-content1");
+let contentText2 = document.querySelector(".btn-content-content2");
+let contentText3 = document.querySelector(".btn-content-content3");
+
+
+btn1.addEventListener("click", () => {
+    event.preventDefault();
+    cardRight.style.background = "#8DD9E9";
+    contentText1.style.display = "block";
+    contentText2.style.display = "none";
+    contentText3.style.display = "none";
+    
+    
+});
+
+btn2.addEventListener("click", () => {
+    event.preventDefault();
+    cardRight.style.background = "#479BAC";
+    contentText1.style.display = "none";
+    contentText2.style.display = "block";
+    contentText3.style.display = "none";
+    
+});
+
+btn3.addEventListener("click", () => {
+    event.preventDefault();
+    cardRight.style.background = "#11778B";
+    contentText1.style.display = "none";
+    contentText2.style.display = "none";
+    contentText3.style.display = "block";
+    
+    
+});
+
+// fim conteúdo central cards azuis
+
+
+
+
