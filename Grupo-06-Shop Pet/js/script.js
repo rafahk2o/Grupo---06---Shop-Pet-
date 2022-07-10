@@ -41,8 +41,8 @@ btn1.addEventListener("click", () => {
     contentText1.style.display = "flex";
     contentText2.style.display = "none";
     contentText3.style.display = "none";
-    
-    
+
+
 });
 
 btn2.addEventListener("click", () => {
@@ -51,7 +51,7 @@ btn2.addEventListener("click", () => {
     contentText1.style.display = "none";
     contentText2.style.display = "flex";
     contentText3.style.display = "none";
-    
+
 });
 
 btn3.addEventListener("click", () => {
@@ -60,8 +60,9 @@ btn3.addEventListener("click", () => {
     contentText1.style.display = "none";
     contentText2.style.display = "none";
     contentText3.style.display = "flex";
-    
-    
+        
+
+
 });
 
 // fim conteúdo central cards azuis
