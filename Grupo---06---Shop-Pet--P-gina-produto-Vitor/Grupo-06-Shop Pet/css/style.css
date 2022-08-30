@@ -331,6 +331,9 @@ label{
     width:400px;
     height:400px;
 }
+.tituloproduto{
+    font-size: x-large;
+}
 #precoproduto{
     width:600px;
     height:100px;
@@ -347,18 +350,20 @@ label{
     right:30px;  
     background:#118ab2;
 }
-#comprar{
-    width:200px;
-    height:100px;
-    right:330px;
+.compracarrinho{
+    width:100px;
+    height:50px;
     margin-top:100px;
+    background: #06d6a0;
+    border-radius: 12px;
+    
+
 }
-#carrinho{
-    width:200px;
-    height:100px;
-    right: 30px;
-    margin-top:100px;
-    margin-left:200px;
+
+#boxcompracarrinho{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /*Lupa para avaliar produto*/
@@ -414,8 +419,12 @@ color: rgb(160, 45, 45)
 }
 
 #select{
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 100px;
+    padding: 15px;
+}
+.optionselect{
+    padding: 15px;
 }
 #containerinferior{
     display:flex;
@@ -438,6 +447,7 @@ color: rgb(160, 45, 45)
 #cepefrete{
     width:600px;
     right:0;
+    height:100px;
 }
 .cepefretelabel{
     font-size: 22px;
@@ -452,6 +462,8 @@ color: rgb(160, 45, 45)
     text-align: center;
     font-size:20px;
     margin-top:15px;
+    height:50px;
+    background: #ffd166;
 }
 #imagenstambemcomprou{
     display:flex;
@@ -464,6 +476,45 @@ color: rgb(160, 45, 45)
     width:100px;
     height:100px;
 }
-#backgroundviutbcomprou{
-    background: #ffd166;
+.quadroimagem{
+    height:150px;
+    width:100px;
+    text-decoration: none;
+    color: #000;
+}
+
+/*Configuração para Iphone*/
+
+@media only screen and (max-width: 600px){
+    #imagemproduto{
+        margin-left:-40px;
+    }
+    #myimage{
+        height:375px;
+        width:375px;
+    }
+    .textoproduto{
+        width:375px;
+        margin-left:-50px;
+    }
+    #containersuperior{
+        display:flex;
+        flex-direction: column; 
+        width:375px;
+        left:0;
+} 
+#boxtituloproduto{
+         margin-left:-50px;
+}
+#precoproduto{
+    width:375px;
+    height:100px;
+    margin-left:-50px;
+    margin-top:15px;
+}
+#parcelasproduto{
+    width:375px;
+    height:100px;
+    margin-left:-50px;
+}
 }
