@@ -497,6 +497,14 @@ color: rgb(160, 45, 45)
         width:375px;
         margin-left:-50px;
     }
+    .tituloproduto{
+         width:355px;
+         padding: 0px 10px 0px 10px;
+    }
+        .codigoproduto{
+            padding: 0px 10px 0px 10px; 
+        }
+
     #containersuperior{
         display:flex;
         flex-direction: column; 
@@ -507,14 +515,50 @@ color: rgb(160, 45, 45)
          margin-left:-50px;
 }
 #precoproduto{
-    width:375px;
+    width:355px;
     height:100px;
     margin-left:-50px;
-    margin-top:15px;
+    padding: 15px 10px 0px 10px; 
 }
 #parcelasproduto{
-    width:375px;
+    width:355px;
     height:100px;
     margin-left:-50px;
+    padding: 0px 10px 0px 10px;
+    display:flex;
+    flex-direction: row;
+}
+#boxcompracarrinho{
+    margin-left:-95px;
+    margin-top:-40px;
+    
+}
+#containerinferior{
+    display:flex;
+    flex-direction: column;
+    margin-left:-530px;
+    margin-top:30px;
+}
+#cepefrete{
+    display:flex;
+    flex-direction: column;
+    margin-left:80px;
+    margin-top:-30px;
+}
+#quemviutambemcomprou{
+    margin-left:-110px;
+}
+#imagenstambemcomprou{
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    margin-left:190px;
+}
+#boxtextoproduto{
+    margin-left:580px;
+    height:300px;
+}
+#select{
+    height:50px;
 }
 }
