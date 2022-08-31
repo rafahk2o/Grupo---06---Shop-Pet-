@@ -97,24 +97,45 @@ function magnify(imgID, zoom) {
     }
   }
 
-  //Para adicionar ou remover quantidade do produto//
+//Para adicionar ou remover quantidade do produto//
+const parcelas = document.getElementById("select");
+const plus = document.querySelector(".plus"),
+    minus = document.querySelector(".minus"),
+    num = document.querySelector(".num");
 
-  const plus= document.querySelector(".plus"),
-   minus= document.querySelector(".minus"),
-   num= document.querySelector(".num");
+let a = 1;
 
-   let a =1;
-
-   plus. addEventListener ("click", ()=>{
-a++;
-a = (a<10)?"0" + a : a;
-num.innerText = a;
-console.log(a);
-   });
-   minus. addEventListener ("click", ()=>{
-    if (a > 1){
-        a--; 
-        a = (a<10)?"0" + a : a;
+plus.addEventListener("click", () => {
+    a++;
+    a = (a < 10) ? "0" + a : a;
+    num.innerText = a;
+    console.log(a);
+    calcularParcelas(a)
+});
+minus.addEventListener("click", () => {
+    if (a > 1) {
+        a--;
+        a = (a < 10) ? "0" + a : a;
         num.innerText = a;
     }
-       });
+    calcularParcelas(a)
+});
+
+function calcularParcelas(qtd){
+    const precoProd = 50;
+    let auxParc = "";
+    auxParc += `<option class="optionselect" value=${qtd * precoProd}>
+                    1x de ${(qtd * precoProd).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}
+                </option>`
+    auxParc += `<option class="optionselect" value=${(qtd * precoProd)/2}>
+                    2x de ${((qtd * precoProd)/2).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}
+                </option>`
+    auxParc += `<option class="optionselect" value=${(qtd * precoProd)/3}>
+                    3x de ${((qtd * precoProd)/3).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}
+                </option>`
+
+    parcelas.innerHTML = auxParc;
+}
+
+
+calcularParcelas(a);
