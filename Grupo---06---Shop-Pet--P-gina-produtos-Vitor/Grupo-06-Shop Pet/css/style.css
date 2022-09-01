@@ -389,9 +389,7 @@ label{
         flex-direction: column;
     }
     .overlay{
-        transition:1s;
+        opacity:1;   
     }
-    .boxproduto:hover .overlay{
-        opacity:1;
-    }
+    
 }
