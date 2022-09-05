@@ -1776,6 +1776,7 @@ label {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    
 }
 
 .footer-form input{
@@ -1802,6 +1803,7 @@ label {
     display: flex;
     justify-content: space-around;
     align-items:center;
+    margin-top: 3rem;
 }
 
 .footer-vet-insta{
@@ -3342,7 +3344,7 @@ label {
 }
 
 .footer-vet{
-    margin-top: 0rem;
+    margin-top: 5rem;
     background: #333;
     width: 100%;
     height: 40vh;
@@ -4953,7 +4955,7 @@ label {
         margin-top: 7rem;
         background: #333;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -5019,7 +5021,7 @@ label {
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-top: 6rem
+        margin-top: 8rem
     }
     
     .footer-form input{
@@ -5028,6 +5030,7 @@ label {
         border-radius: 0.5rem;
         border: none;
         outline: none;
+        
     }
     
     .footer-form button{
@@ -5078,6 +5081,7 @@ label {
     }
     .footer-vet-linke img   {
         width: 50%;
+        
     }
 }
 
