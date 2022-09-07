@@ -374,6 +374,153 @@ label{
        transform:translate(0,-20%);
        transition: 0.5s;    
 }
+/* Inicio do rodapé */
+footer{
+    grid-area: footer;
+    position: relative;
+    top:0; 
+    left: 0; 
+    right:0;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#container footer ul{list-style-type:none;}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    width: 100%;
+}
+.info-footer{
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    justify-content: space-around;
+}
+.info-footer h3{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #eee;
+    padding-bottom: 1%;
+    border-bottom: 0.5px solid #fff;
+}
+.sobre-nos{
+    width: 33.33%;
+    padding: 1%;
+    color: #eee;
+}
+.link1{
+    width: 33.33%;
+    padding: 1%;
+}
+footer .link1 a{
+    font-size: 100%;
+}
+.link1 a:hover{
+    text-decoration: underline;
+}
+.atendimento{
+    color: #fff;
+    padding: 1%;
+}
+.promotions{
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px solid #fff;
+    border-bottom: 0.5px solid #fff;
+    width: 100%;
+}
+.form-promotions{
+    padding: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    height: 3rem;
+}
+.form-promotions input{
+    width: 35%;
+    border: none;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 1px 1px 10px rgb(146, 145, 145);
+    display: flex;
+    text-align: center;
+}
+.form-promotions button{
+    width: 10%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #df3c0a;
+    color: #fff;
+    box-shadow: 1px 1px 10px #c73306;
+}
+.form-promotions button:hover{
+    background-color: #a52d08;
+}
+.social-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82%;
+}
+.ajsutes-social-btns{
+    display: flex;
+    gap: 20%;
+    padding: 1%;
+}
+.ajsutes-social-btns i, button{
+    font-size: 5rem;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+.fa-linkedin{
+    color: #264653;
+}
+.fa-linkedin:hover{
+    -webkit-animation-name: social-btns;
+    -webkit-animation-duration: 2.4s;
+    -webkit-animation-iteration-count: 0s;
+}
+.fa-twitter{
+    color: #3b90ff;
+}
+.fa-twitter:hover{
+    -webkit-animation-name: social-btns;
+    -webkit-animation-duration: 2.4s;
+    -webkit-animation-iteration-count: 0s;
+}
+.fa-facebook{
+    color: #215497;
+}
+.fa-facebook:hover{
+    -webkit-animation-name: social-btns;
+    -webkit-animation-duration: 2.4s;
+    -webkit-animation-iteration-count: 0s;
+}
+.fa-instagram{
+    color: #e95950;
+}
+.fa-instagram:hover{
+    -webkit-animation-name: social-btns;
+    -webkit-animation-duration: 2.4s;
+    -webkit-animation-iteration-count: 0s;
+}
+@keyframes social-btns {
+    0% {
+        transform:translatey(0%);
+    }
+    20% {
+        transform:translateY(-10%) scale(1.08);
+    }
+}
+/*Fim do rodapé*/
 
 @media screen and (max-width: 1000px){
     #produtosrow1{
@@ -391,5 +538,76 @@ label{
     .overlay{
         opacity:1;   
     }
+    @media (max-width:1418px){
     
+        header .icons #menu-bars{
+            display: inline-block;
+        }
+        header .navbar{
+            position: absolute;
+            top: 9%; left: 0; right: 0;
+            background: #264653;
+            border-top: 0.16px solid rgba(0, 0, 0, .2);
+            border-bottom: 0.16px solid rgba(0, 0, 0, .2);
+            padding: 15px;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        header .navbar a{
+            color: #010101;
+        }
+        header .navbar .dropdown{
+            display: none;
+        }
+    
+        header .navbar{
+            display: flex;
+            flex-direction: column;
+        }
+        header .navbar.active{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        header .navbar a{
+            display:block;
+            padding:1.5rem;
+            margin:15.6px;
+            font: size 29px;;
+            background: #e6e6e6;
+        }
+        #search-form #search-box{
+            width: 90%;
+            margin: 0 1rem;
+        }
+        main .img-banner{
+            width: 650px;
+        }
+        footer .rede-social-footer{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 3px;
+        }
+        main .services{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5%;
+            align-items: center;
+        }
+        main .others-services{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 2.5rem;
+        }
+        main .animation-rainbow-text{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .dog-main{
+            display: none;
+        }
+    }
 }
+
+

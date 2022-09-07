@@ -24,3 +24,15 @@ document.querySelector('#login-btn').onclick = () =>{
     searchForm.classList.remove('active');
     cart.classList.remove('active');
 }
+//Menu responsivo do cabeçalho
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+  cart.classList.remove('active');
+  searchForm.classList.remove('active');
+  loginForm.classList.remove('active');
+}
