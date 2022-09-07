@@ -542,7 +542,7 @@ main .services{
     font-family: 'Gantari', sans-serif;
     padding-right: 80px;
     font-size: 40px;
-    height: 37vh;
+    height: 38vh;
 }
 .wrap{
     display: flex;
@@ -632,7 +632,6 @@ main .services{
     color: #eee;
     position:absolute;
     top: 1%;
-    z-index: 55;
 }
 .other-services-text p{
     font-size: 20px;
@@ -649,7 +648,7 @@ main .services{
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
+    position: relative;
 }
 .dog-services-img{
     width: 356px;
@@ -950,7 +949,13 @@ footer .link1 a{
     gap: 20%;
     padding: 1%;
 }
-.ajsutes-social-btns i, button{
+.ajsutes-social-btns i{
+    font-size: 5rem;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+.ajsutes-social-btns .social-media-btn{
     font-size: 5rem;
     background-color: #333;
     border: none;
@@ -1054,10 +1059,6 @@ footer .link1 a{
     } 
 }
 @media (max-width:991px){
-    
-    html{
-        font-size: 55%;
-    }
     html{
         font-size: 44%;
     }
@@ -1070,7 +1071,6 @@ footer .link1 a{
         width: 150px;
     }
     header .logo{
-        color: var(--black);
         font-size: 20px;
         font-weight: bolder;   
     }
@@ -1106,12 +1106,6 @@ footer .link1 a{
         height: 500px;
         border-radius: 6px;
         overflow: hidden;
-    }
-}
-@media (max-width:1418px){
-    .animation-rainbow-text{
-        margin: 0 auto;
-        position: relative;
     }
 }
 @media (max-width:1000px){
@@ -1163,6 +1157,10 @@ footer .link1 a{
     main .img-banner{
         width: 650px;
     }
+    .other-services-text{
+        margin-bottom: 5%;
+        position: relative;
+    }
     footer .rede-social-footer{
         display: flex;
         flex-direction: row;
@@ -1185,12 +1183,16 @@ footer .link1 a{
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+        font-size: 320%;
+        }
     }
     .dog-main{
         display: none;
     }
-}
+
 @media (max-width:510px){
     
     html{
@@ -1246,6 +1248,102 @@ footer .link1 a{
     main .services{
         display: flex;
         flex-direction: column;
-        margin-top: -120%;
+        margin-top: -50%;
+    }
+    .services .img-services-hotel{
+        width: 280px;
+        height: 280px;
+        background-image: url("../image/blocoHotel-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .services .text-services-hotel{
+        width: 280px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-services-hotel i{
+        color: #fff;
+        font-size: 50px;
+        padding-left: 100px;
+    }
+    .text-services-hotel p{
+        color: #fff;
+        padding-left:45px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .services .img-services-banhoTosa{
+        width: 280px;
+        height: 280px;
+        background-image: url("../image/blocoBanhoeTosa-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .services .text-services-banhoTosa{
+        width: 280px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-services-banhoTosa i{
+        color: #fff;
+        font-size: 50px;
+        padding-left: 110px;
+    }
+    .text-services-banhoTosa p{
+        color: #fff;
+        padding-left:63px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .services .img-services-veterinario{
+        width: 280px;
+        height: 280px;
+        background-image: url("../image/blocoVeterinario-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .services .text-services-veterinario{
+        width: 280px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-services-veterinario i{
+        color: #fff;
+        font-size: 50px;
+        padding-left: 113px;
+    }
+    .text-services-veterinario p{
+        color: #fff;
+        padding-left:82px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .services .img-services-petSitting{
+        width: 280px;
+        height: 280px;
+        background-image: url("../image/blocoPetSitting-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .services .text-services-petSitting{
+        width: 280px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-services-petSitting i{
+        color: #fff;
+        font-size: 55px;
+        padding-left: 105px;
+    }
+    .text-services-petSitting p{
+        color: #fff;
+        padding-left:80px;
+        font-size: 20px;
+        font-weight: 900;
     }
 }
