@@ -607,6 +607,19 @@ footer .link1 a{
         .dog-main{
             display: none;
         }
+        .info-footer{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .ajsutes-social-btns{
+            display:flex;
+            flex-direction: column;
+        }
+        .btn-promotions{
+            min-width:60px;
+        }
     }
 }
 
