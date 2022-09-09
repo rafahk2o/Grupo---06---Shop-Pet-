@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300&display=swap');
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Gantari', sans-serif;
+}
+*{
+    text-decoration: none;
+}
+/*Grid mantendo a estrura toda em coluna(Header Main Footer)*/
+#container{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "main" "footer";
+}
+/*Cabeçalho inicio*/
+#container header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    background: #264653;
+    box-sizing:border-box;
+    box-shadow: 1px 3px 15px #264653;
+    height: 55px;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    color: #eee;
+    gap: 600px;
+}
+/*Inicio do logo*/
+header .box-logo{
+    width: 225px;
+}
+header .logo{
+    color: #e9c46a;
+    font-size: 22px;
+    font-weight: bolder;
+}
+header .logo:hover{
+    font-size: 27px;
+    transition:.2s linear;
+}
+/*Término das modificações do logo*/
+
+/*Barra de navegação, modificando dropdown menu e icones*/
+.navbar{
+    position:fixed;
+    display: flex; 
+}
+/*Dropdown menu*/
+.dropdown{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    background: #264653;
+    box-sizing:border-box;
+    box-shadow: 1px 3px 15px #264653;
+}
+.menu li{
+    width: 100%;
+    position: relative;
+    float: left;
+    border-left: 1px solid #010101;
+    list-style: none;
+}
+.menu li:first-child{border: none;}
+.menu a{
+    color: #264653;
+    text-decoration: none;
+    padding: 5px 13px;
+    display: block;
+}
+.menu a:hover{
+    background: #264653;
+    color: #fff;
+}
+.menu .dropdown a{ color:#eee}
+.menu .dropdown li{ border: none}
+.menu li:hover ul{ display: block}
+.menu li ul li:hover ul{display: block;}
+/*Término dropdown menu*/
+header .navbar a{
+    font-size: 18px;
+    border-radius:40px;
+    padding: 8px 20px;
+    color:#eee;
+}
+.menu .dropdown li ul{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    background: #fff;
+    display: none;
+}
+header .navbar a:hover{
+    color: #fff;
+    background-color: #e9c46a;
+}
+header .fa-bars, .fa-search, .fa-shopping-cart, .fa-user{
+    cursor: pointer;
+    margin-left: 5px;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #eee;
+    border-radius:50%;
+}
+header .icons .fa-bars:hover, .fa-search:hover, .fa-shopping-cart:hover, .fa-user:hover{
+    color: #eee;
+    background: #e9c46a;
+    transform: rotate(360deg);
+    transition: .3s linear;
+}
+/*Menu oculto para se tornar responsivo (Não terminado)*/
+header .icons #menu-bars{
+    display: none;
+}
+/*Barra de pesquisa oculta*/
+.search-form{
+    display: flex;
+    position: absolute;
+    top: -500%; right:2rem;
+    background: rgb(255, 255, 255);
+    box-sizing:border-box;
+    box-shadow: 1px 10px 10px rgb(133, 132, 132);
+    width: 385px;
+    height: 52px;
+    transition: .3s linear;
+}
+.search-form.active{
+    display:flex;
+    align-items: center;
+    top: 120%; right:2rem;
+}
+.search-form input{
+    height: 100%;
+    width: 95%;
+    padding:0 20px;
+    font-size:  18px;
+    color: #000;
+    text-transform: none;
+    border: none;
+}
+label{
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/*Término barra de pesquisa*/
+
+/*Inicio carrinho de compra*/
+.shopping-cart{
+    display:flex;
+    position: absolute;
+    top: -500%; right: 2rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 10px 10px rgb(204, 204, 204);
+    min-width: 325px;
+    padding: 10px;
+    transition: .3s linear;
+}
+.shopping-cart.active{
+    display: inline-block;
+    top: 120%; right: 2rem;
+    transition: .16s linear;
+
+}
+.box-cart-buy{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.header-cart-buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #264653;
+    width: 100%;
+    height: 35px;
+    font-size: 22px;
+    color: #e9c46a;
+    border-radius: 5px;
+}
+.btn-cart-buy{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 5px;
+    background-color: #264653;
+    color: #e9c46a;
+    font-size: 18px;
+    cursor: pointer;
+    width: 85%;
+    text-align: center;
+}
+.btn-cart-buy:hover{
+    letter-spacing: 2px;
+    transition: .2s linear;
+}
+/*Término carrinho de compra*/
+
+/*Inicio do formulário de login*/
+.login-form{
+    position: absolute;
+    top: -800%; right: 2rem;
+    background-color: #264653;
+    border-radius: 5px;
+    box-shadow: 1px 10px 10px rgb(204, 204, 204);
+    width: 350px;
+    transition: .2s linear;
+}
+.login-form.active{
+    display: inline-block;
+    top: 120%; right: 2rem;
+}
+.login-form h3{
+    margin-top: 10px;
+    color: #e9c46a;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.login-form .box-login{
+    margin: 11px;
+    border: solid 1px #e9c46a;
+    padding: 13px 11px;
+    font-size: 1rem;
+    color: #264653;
+    text-transform: none;
+    width: 85%;
+}
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 5px 0;
+    padding-left:7px; ;
+}
+.login-form label{
+    font-size: 1;
+    color: #e9c46a;
+    cursor: pointer;
+}
+.btn-login-form{
+    margin: 10px 7%;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 5px;
+    border: 0.2px solid #e9c46a;
+    background-color: #264653;
+    color: #e9c46a;
+    font-size: 18px;
+    cursor: pointer;
+    width: 85%;
+}
+.btn-login-form:hover{
+    letter-spacing: 1px;
+    transition: .3s linear;
+}
+.login-form p{
+    color: #e9c46a;
+    padding: 10px;
+    font-size:14px;
+}
+.login-form a{
+    color: #f4a261;
+}
+.login-form a:hover{
+    text-decoration: underline;
+}
+/*Término do formulário de login*/
+
+/*Término da barra de navegação*/
+/*Cabeçalho término*/
+
+/* Inicio do corpo */
+section{
+    min-height: 80vh;
+    max-height: 80vh;
+    width: 100%;
+    background-color: ivory;
+  }
+
+  section picture {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+/* estiliza o botao */
+.button-27 {
+  appearance: none;
+  background-color: #E9C46A;
+  border: 2px solid #1A1A1A;
+
+  border-radius: 15px;
+  box-sizing: border-box;
+
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+
+  margin: 0;
+  min-height: 60px;
+  min-width: 80px;
+
+  outline: none;
+  padding: 16px 24px;
+
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+  width: fit-content;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+#container .main{
+    grid-area: main;
+    position: relative;
+    top:0; left: 0; right:0;
+    background:#fff;
+    padding: 2px 0px;
+    display: flex;
+    justify-content: center;
+    box-sizing:border-box;
+    box-shadow: 1px 2px 10px rgb(143, 143, 143,0.9);
+    z-index: 998px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container{
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+/* Configurando as transicoes no scroll */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+/* Mudando o article */
+article{
+    padding: 35px;
+    /* background-color: rgb(14, 177, 101); */
+    background-color: #90BE6D;
+}
+
+.article-container{
+    display: flex;
+    box-sizing:border-box;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 40px;
+}
+
+article p {
+    font-size: large;
+    width: 600px;
+    overflow: auto;
+    word-break: keep-all;
+}
+
+article p em {
+    display: block;
+    font-size: larger;
+    font-weight: 900;
+}
+
+/* Menu de opçoes de adoção */
+/* Renan Reis 20/08/2022*/
+/* umas alterações para o menu de adocao */
+.flex{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-block: 100px;
+}
+
+.text-main{
+    box-sizing: border-box;
+    margin-block-start: 20px;
+    text-align: center;
+    word-break: break-all;
+    padding: 20px;
+}
+
+ /* Configura o formato da caixa das imagens */
+ main figure img{
+    border: solid rgb(0, 0, 0) 5px;
+    border-radius: 84px 1px 150px 1px;
+    -webkit-border-radius: 84px 1px 150px 1px;
+    -moz-border-radius: 84px 1px 150px 1px;
+
+    opacity: 0.7;
+
+    width: 300px;
+    height: 250px;
+    
+    margin-inline: 40px;
+}
+
+/* Animação das imagens no hover */
+@keyframes adoption-page-img {
+    100%{
+        opacity: 1;
+    }
+
+    0%{
+        opacity: 0.7;
+    }
+
+}
+
+/* Animacao das imagens */
+main img:hover {
+    animation: adoption-page-img 0.7s both;
+}
+
+figure figcaption{
+      font-size: large !important;
+      text-align: center;
+}
+
+
+/* config dos textos */
+section div h3{
+    font-size: 60px;
+}
+
+main .article-container p em{
+    font-size: 60px;
+}
+
+.text-main h3 {
+    font-size: 45px;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+
+/* Término do corpo */
+
+
+/* Renan Reis 25/08/2022 */
+/* inicio do Footer */
+footer{
+    grid-area: footer;
+    position: relative;
+    top:0; left: 0; right:0;    
+    background:rgb(36, 36, 36);
+
+    color: rgb(224, 224, 224);
+    padding: 2px 0px;
+    
+    z-index: 997px;
+    min-height: 200px;
+
+    box-sizing:border-box;
+    padding-block-start: 40px;
+
+}
+
+/* Organiza os 3 divs principais do footer */
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Pequena configuracao para as divs do footer */
+.footer-container div {
+    box-sizing: border-box;
+    margin: 10px;
+    margin-inline: 20px;
+    padding: 10px;
+}
+
+/* Configura a borda das caixas */
+.footer-container .first-collumn-footer, .second-collumn-footer {
+    border-right-style:dashed;
+    border-right-color: rgb(224, 224, 224);
+    border-right-width: 0.1mm;
+}
+
+/* configuracoes de espacamento do texto da primeira coluna */
+/* Titulo da div */
+.footer-container .titulo-footer{
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Primeiro p */
+.footer-container .first-collumn-footer h3 + p{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* link da primeira coluna */
+.footer-container .first-collumn-footer a {
+    color: white;
+    outline: none;
+
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+/* Ultimo p da div */
+.footer-container .first-collumn-footer p:last-child {
+    margin-top: 40px;
+}
+
+
+
+/* Fim do footer */
+
+section{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 75vh;
+    max-height: 75vh;
+    width: 100%;
+    background-color: ivory;
+}
+
+section h3 {
+    font-size: 80px;
+}
+
+section picture {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}

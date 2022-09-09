@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Renan Reis">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style-adoption.css">
+    <link rel="stylesheet" href="../Grupo-06-Shop Pet/css/style.css">
+
+    <script src="../Grupo-06-Shop Pet/js/script.js" defer></script>
+    <title>Shop Pet</title>
+</head>
+
+<body>
+    <div id="container">
+        <!--Inicio do cabeçalho-->
+        <header class="header">
+            <!--Logo-->
+            <div class="box-logo">
+                <h1 class="logo"><span>Shop Pet</span></h1>
+            </div>
+            <!--Navegação cabeçalho-->
+            <nav class="navbar">
+                <a href="index.html">Página inicial</a>
+                <ul class="menu">
+                    <li>
+                        <a href="#compras">Ir ás compras &#9660;</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Acessórios</a></li>
+                            <li><a href="#">Remédios</a></li>
+                            <li><a href="#">Rações</a></li>
+                            <li><a href="#">Brinquedos</a></li>
+                            <li><a href="#">Não sei 1</a></li>
+                            <li><a href="#">Não sei 2</a></li>
+                            <li><a href="#">Não sei 3</a></li>
+                            <li><a href="#">Não sei 4</a></li>
+                            <li><a href="#">Não sei 5</a></li>
+                            <li><a href="#">Não sei 6</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#sobre">Sobre</a>
+                <a href="#serviços">Serviços</a>
+                <a href="#contatos">Contatos</a>
+            </nav>
+            <!--Término da Navegação cabeçalho-->
+            <!-- icones de carrinho, Perfil, pesquisa e menu responsivo-->
+            <div class="icons">
+                <i id="menu-bars" class="fas fa-bars"></i>
+                <i id="search-btn" class="fas fa-search"></i>
+                <a id="cart-btn" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+            <!-- Barra de pesquisa oculta -->
+            <form action="" class="search-form">
+                <input type="search" placeholder="Procure aqui..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <!-- Carrinho de compra oculto -->
+            <div class="shopping-cart">
+                <div class="header-cart-buy">
+                    Carrinho
+                </div>
+                <div class="box-cart-buy">
+
+                </div>
+                <div class="box-cart-buy">
+
+                </div>
+                <div class="box-cart-buy">
+
+                </div>
+                <div class="box-cart-buy">
+
+                </div>
+                <a href="#" class="btn-cart-buy">Finalizar compra</a>
+            </div>
+
+            <!-- Formulário de login oculto -->
+            <form action="" class="login-form">
+                <h3>Entre aqui</h3>
+                <input type="email" placeholder="entre com seu email aqui" class="box-login">
+                <input type="password" placeholder="entre com sua senha aqui" class="box-login">
+                <div class="remember">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">Lembrar de mim</label>
+                </div>
+                <input type="submit" value="Entre Agora" class="btn-login-form">
+                <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+                <p>Não tem uma conta ainda? <a href="#">Crie uma agora</a></p>
+            </form>
+        </header>
+        <!--Término do cabeçalho-->
+
+        <!-- Inicio do corpo -->
+        <main class="main" style="text-align: center;">
+            <section>
+                <div>               
+                    <h3> Buscando algum bixinho especial? <span></span></h3>
+
+                    <picture>
+                       <img src="img/afwd.png" alt="">
+                       <img src="img/safas.png" alt="">
+                       <img src="img/asgk.png" alt="">
+                    </picture>
+                    <br>
+                   <a href=""> <button class="button-27" role="button">Venha e adote um pet</button> </a>
+                </div>  
+            </section>
+        
+            <div class="container">
+                <article>
+                    <div class="article-container reveal" onscroll="reveal()">
+                            <p>
+                                <em>
+                                    Cansado de chorar no banheiro?
+                                    Então que tal arrumar um amigo?
+                                </em>
+                                Se você está buscando um companheiro para dividir a cama com você, para compartilhar aquele pedaço extra de pizza ou até mesmo para detectar fantasmas, talvez um pet seja 
+                                a escolha perfeita. Além de ser um ótimo protetor para a casa, eles serão excelente amigos e não vão te abandonar nunquinha, mesmo se você for um pessímo cozinheiro ou 
+                                ouvir sertanejo universitário. Viu, só vantagens em adotar um novo coleguinha. Então não perca tempo e venha escolher o pet ideal para o seu lar
+                            </p>
+                        
+                            <picture>
+                                <img src="img/cao-e-gato.png" alt="">
+                            </picture>
+                        </div>
+
+                        <div class="article-container reveal">
+                            <picture>
+                                <img src="img/gato-com-coracao.png" alt="">
+                            </picture>
+
+                            <p> <em>What is Lorem Ipsum?</em>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                
+                                Why do we use it?
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                            </p>
+                        </div>
+                </article>
+            </div>
+
+
+
+            <div class="container">
+                <div class="text-main reveal">
+                    <h3>Lorem Ipsum</h3>
+                    <p>
+                        What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                        Why do we use it?
+                    </p>
+                </div>
+
+                <div class="reveal" style="text-align: center;">
+                    <h3>Pronto para adotar?</h3>
+                    <br>
+                    <button class="button-27" role="button">Venha e adote um pet</button>
+                </div>
+                <br><br><br><br><br>
+
+              </div>
+        </main>
+        <!-- Término do corpo -->
+
+
+        <!-- Inicio do rodapé -->
+        <footer class="footer">
+            <div class="footer-container">
+                
+                <div class="first-collumn-footer"> 
+                    <h3 class="titulo-footer">Logo</h3>
+                    <p>Contact Us</p>
+                    <p>5343 Somewhere over the rainbow</p>
+                    <p><a href="mailto:name@email.com">Email Us</a></p>
+                    <p>Bla bla All Rights Reserved</p>
+                </div>
+
+                <div class="second-collumn-footer">
+                    <h3 class="titulo-footer">Medias Sociais</h3>
+                    <p>Insta</p>
+                    <p>Discord</p>
+                    <p>Twitter</p>
+                </div>
+
+                <div class="third-column-footer">
+                    <h3 class="titulo-footer">Legal</h3>
+                    <p>Politica de Privacidade</p>
+                    <p>Termos de Uso</p>
+                    <p>Sla</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Término do rodapé -->
+    </div>
+</body>
+
+</html>
