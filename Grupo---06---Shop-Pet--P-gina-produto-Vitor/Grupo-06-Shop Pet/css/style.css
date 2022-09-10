@@ -657,13 +657,24 @@ footer .link1 a{
     align-items: center;
     justify-content: center;
     width: 82%;
+    
 }
-.ajsutes-social-btns{
+.ajustes-social-btns{
     display: flex;
     gap: 20%;
     padding: 1%;
+    background-color: #333;
 }
-.ajsutes-social-btns i,button{
+.ajustes-social-btns button i{
+    font-size: 5rem;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+.ajustes-social-btns{
+    background-color: #333;
+}
+.ajustes-social-btns .social-media-btn{
     font-size: 5rem;
     background-color: #333;
     border: none;
@@ -713,6 +724,18 @@ footer .link1 a{
 
 @media (max-width:1418px){
     
+    .icons{
+    margin-top:-1190px;      
+    }
+    .navbar.active{
+        margin-top: 50px;
+    }
+    #search-box{
+        margin-left:85px;
+    }
+    .logo span{
+        margin-left:-70px;
+    }
     header .icons #menu-bars{
         display: inline-block;
     }
@@ -779,5 +802,25 @@ footer .link1 a{
     }
     .dog-main{
         display: none;
+    }
+    .info-footer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ajustes-social-btns{
+        display:flex;
+        flex-direction: column;
+        background-color: #333;
+    }
+    .social-media-btn{
+        background-color: #333;
+    }
+    .btn-promotions{
+        min-width:60px;
+    }
+    .footer{
+        margin-top:400px;
     }
 }
