@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js" defer></script>
+    <title>Página de compras</title>
+  </head>
+  <body>
+    <div id="container-geral">
+      <header class="header">
+        <div class="logo-compras">
+          <h1>Shop Pet</h1>
+        </div>
+        <div class="label-compras">
+          <img src="/img/label.png" alt="" />
+        </div>
+        <div class="user-compras">
+          <i class="bx bxs-user-circle"></i>
+        </div>
+      </header>
+      <main class="container-compras">
+        <div class="container-compras-left">
+          <h2>1 - dados pessoais</h2>
+          <p>faça o seu login</p>
+          <form class="form-compras">
+            <label name="email-compras">Email<input type="email" /></label>
+            <label name="pass-compras">Senha<input type="password" /></label>
+            <button class="form-btn">Entrar</button>
+          </form>
+          <h2>criar nova conta</h2>
+          <div class="new-ser-compras">
+            <button class="btn-compras">fazer cadastro</button>
+          </div>
+        </div>
+        <div class="container-compras-center">
+          <h2>2 - Forma de pagamento</h2>
+          <div class="formapagamento-compras">
+            <div class="cartao-pagamento-compras">
+              <label
+                ><input
+                  name="card-pag"
+                  id="card-pag"
+                  value="card-pag"
+                  type="radio"
+              /></label>
+              <i class="bx bxs-credit-card"></i>
+              <p>cartão de crédito</p>
+            </div>
+            <div class="pix-pagamento-compras">
+              <label
+                ><input
+                  name="pix-pag"
+                  id="pix-pag"
+                  value="pix-pag"
+                  type="radio"
+              /></label>
+              <i class="bx bx-money-withdraw"></i>
+              <p>pix</p>
+            </div>
+            <div class="boleto-pagamento-compras">
+              <label
+                ><input
+                  name="boleto-pag"
+                  id="boleto-pag"
+                  value="boleto-pag"
+                  type="radio"
+              /></label>
+              <i class="bx bxs-barcode"></i>
+              <p>boleto</p>
+            </div>
+          </div>
+          <div class="campo-dados-compras">
+            <div class="campo-cartao-pagamento-compras">
+              <div class="campo-cartao-pagamento-compras-card">
+                <label
+                  >Número do cartão<input type="number" id="card-compras"
+                /></label>
+                <label
+                  >Código de segurança<input
+                    type="number"
+                    id="card-compras-code"
+                /></label>
+              </div>
+              <div class="campo-cartao-pagamento-compras-card-data">
+                <label>Nome no cartão<input type="text" /></label>
+              </div>
+              <div class="campo-cartao-pagamento-compras-card-validade">
+                <label>Validade<input type="month" /></label>
+                <input type="year" />
+              </div>
+              <div class="campo-cartao-pagamento-compras-card-parcelas">
+                <label>Número de parcelas<input type="text" /></label>
+              </div>
+            </div>
+          </div>
+          <div class="campo-dados-pix-compras">
+            Aponte a camera do celular
+            <img src="/img/qr.png" alt="Qr code" />
+          </div>
+          <div class="campo-dados-boleto-imprimir">
+            <button>Visualizar boleto</button>
+          </div>
+        </div>
+        <div class="container-compras-right">
+          <h2>3 - Concluir pedido</h2>
+          <h3>Total de itens</h3>
+          <div class="cupom-desconto-compras">
+            <input type="text" placeholder="Informe o cupom de desconto" />
+            <button>Usar</button>
+          </div>
+          <div class="total-compras-pagamento">
+            <div class="subtotal-compras">
+              <p>Subtotal</p>
+              <span>R$ 00,00</span>
+            </div>
+            
+            <div class="frete-compras">
+              <p>Frete</p>
+              <span>R$ 00,00</span>
+            </div>
+            <div class="total-compras">
+              <p>Total</p>
+              <span>R$ 00,00</span>
+            </div>
+            <div class="finalizar-compra-btn">
+              <button>Finalizar compra</button>
+            </div>
+          </div>
+          <div class="itens-pedido-compras">
+            <h2>Intens do pedido</h2>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
