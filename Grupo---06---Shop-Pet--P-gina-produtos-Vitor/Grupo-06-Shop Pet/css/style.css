@@ -539,6 +539,18 @@ footer .link1 a{
         opacity:1;   
     }
     @media (max-width:1418px){
+        .icons{
+            margin-top:-1190px;      
+            }
+            .navbar.active{
+                margin-top: 50px;
+            }
+            #search-box{
+                margin-left:85px;
+            }
+            .logo span{
+                margin-left:-70px;
+            }
     
         header .icons #menu-bars{
             display: inline-block;
