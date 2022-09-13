@@ -324,6 +324,17 @@ section{
       align-items: center;
       justify-content: space-around;
   }
+/* @media (max-width: 968px) {
+        
+  } */
+
+  /* @media (max-width: 690px){
+  } */
+
+  /* @media (min-width: 200px) {
+  } */
+
+
 
 /* estiliza o botao */
 .button-27 {
@@ -441,6 +452,7 @@ article p em {
 
 /* Menu de opçoes de adoção */
 /* Renan Reis 20/08/2022*/
+
 /* umas alterações para o menu de adocao */
 .flex{
     height: auto;
