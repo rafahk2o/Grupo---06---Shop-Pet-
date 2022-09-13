@@ -115,7 +115,7 @@ video {
     text-decoration: none;
 }
 
-:root{
+:root {
     --color-primary: #ef476f;
     --color-secundary: #ffd166;
     --color-third: #06d6a0;
@@ -130,17 +130,17 @@ video {
     grid-template-areas: "header""main""footer";
 }
 
-.header{
+.header {
     grid-area: header;
     width: 100%;
     height: 5rem;
-    background: var(--color-fifth) ;
+    background: var(--color-fifth);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo-compras{
+.logo-compras {
     width: 20%;
     height: 4rem;
     display: flex;
@@ -150,17 +150,18 @@ video {
     font-size: 2rem;
     color: var(--color-secundary)
 }
-.label-compras{
+
+.label-compras {
     width: 20%;
     height: 4rem;
 
 }
 
-.label-compras img{
+.label-compras img {
     width: 100%;
 }
 
-.user-compras{
+.user-compras {
     width: 20%;
     height: 4rem;
     display: flex;
@@ -168,19 +169,20 @@ video {
     align-items: center;
     font-size: 4rem;
     color: var(--color-secundary)
-
 }
 
-.container-compras{
+.container-compras {
     grid-area: main;
     width: 100%;
     height: 100vh;
     background: #eee;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 
-.container-compras-left{
+.container-compras-left {
     width: 30%;
     height: 70vh;
     margin: 0 2rem;
@@ -189,40 +191,40 @@ video {
     border: 1px solid #c0c0c0;
 }
 
-.container-compras-left h2{
+.container-compras-left h2 {
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 2rem;
     margin-left: 3rem;
-    color:rgb(94, 94, 94);
+    color: rgb(94, 94, 94);
     color: var(--color-primary);
     font-size: 1.2rem;
-    
+
 }
 
-.container-compras-left p{
+.container-compras-left p {
     text-transform: uppercase;
     margin-left: 3rem;
     margin-top: 1rem;
     color: var(--color-primary);
-    
+
 }
 
-.form-compras{
+.form-compras {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
 }
 
-.form-compras label{
+.form-compras label {
     display: block;
     width: 80%;
     margin-top: 1rem;
 }
 
-.form-compras input{
+.form-compras input {
     display: block;
     width: 100%;
     height: 2rem;
@@ -230,28 +232,28 @@ video {
     border: 1px solid #ccc;
 }
 
-.form-compras button{
-   margin-top: 2rem;
-   background: var(--color-fourth);
-   border: none;
-   color: #fff;
-   padding: 1rem 3rem;
-   cursor: pointer;
-   text-transform: uppercase;
-   font-size: 0.9rem;
+.form-compras button {
+    margin-top: 2rem;
+    background: var(--color-fourth);
+    border: none;
+    color: #fff;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9rem;
 
 }
 
 
-.new-ser-compras{
+.new-ser-compras {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 
 }
 
-.btn-compras{
+.btn-compras {
     margin-top: 2rem;
     width: 80%;
     background: var(--color-fourth);
@@ -264,15 +266,15 @@ video {
 }
 
 
-.container-compras-center{
+.container-compras-center {
     width: 30%;
     height: 70vh;
     margin: 0 2rem;
     margin-top: 2rem;
-    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.192); 
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.192);
 }
 
-.container-compras-center h2{
+.container-compras-center h2 {
     margin-left: 2rem;
     margin-top: 2rem;
     text-transform: uppercase;
@@ -282,17 +284,17 @@ video {
 }
 
 
-.formapagamento-compras{
+.formapagamento-compras {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: start;
     margin-left: 2rem;
     margin-top: 3rem;
 }
 
 
-.cartao-pagamento-compras{
+.cartao-pagamento-compras {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -300,41 +302,41 @@ video {
 
 }
 
-.cartao-pagamento-compras i{
+.cartao-pagamento-compras i {
     font-size: 3rem;
-    color:var(--color-fifth)
+    color: var(--color-fifth)
 }
 
-.pix-pagamento-compras{
+.pix-pagamento-compras {
     display: flex;
     gap: 1rem;
     align-items: center;
     text-transform: uppercase;
 }
 
-.pix-pagamento-compras i{
+.pix-pagamento-compras i {
     font-size: 3rem;
-    color:var(--color-fifth)
+    color: var(--color-fifth)
 }
 
-.boleto-pagamento-compras{
+.boleto-pagamento-compras {
     display: flex;
     gap: 1rem;
     align-items: center;
     text-transform: uppercase;
 }
 
-.boleto-pagamento-compras i{
+.boleto-pagamento-compras i {
     font-size: 3rem;
-    color:var(--color-fifth);
-    
+    color: var(--color-fifth);
+
 }
 
 
 /* Campo de pagameno cartão de crédito */
-.campo-dados-compras{
+.campo-dados-compras {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
     display: none;
@@ -342,88 +344,89 @@ video {
 
 }
 
-.campo-dados-compras input{
+.campo-dados-compras input {
     height: 1.5rem;
     outline: none;
-    margin-bottom: 0.5rem;;
+    margin-bottom: 0.5rem;
+    ;
 }
 
-.campo-cartao-pagamento-compras{
-    width: 24rem;
+.campo-cartao-pagamento-compras {
+    /* width: 24rem; */
     height: 15rem;
-    
+
 }
 
-.campo-cartao-pagamento-compras label{
+.campo-cartao-pagamento-compras label {
     display: block;
 
 }
 
-.campo-cartao-pagamento-compras input{
+.campo-cartao-pagamento-compras input {
     display: block;
 }
 
-.campo-cartao-pagamento-compras-card{
+.campo-cartao-pagamento-compras-card {
     display: flex;
     gap: 1rem;
     align-items: flex-end;
 
 }
 
-.campo-cartao-pagamento-compras-card, #card-compras{
+.campo-cartao-pagamento-compras-card, #card-compras {
     width: 15rem;
     outline: none;
 }
 
-.campo-cartao-pagamento-compras-card, #card-compras-code{
+.campo-cartao-pagamento-compras-card, #card-compras-code {
     width: 3rem;
     outline: none;
-    
+
 }
 
-.campo-cartao-pagamento-compras-card-data input{
-   width: 24rem;
-   outline: none;
+.campo-cartao-pagamento-compras-card-data input {
+    width: 24rem;
+    outline: none;
 }
 
-.campo-cartao-pagamento-compras-card-validade{
+.campo-cartao-pagamento-compras-card-validade {
     display: flex;
     align-items: flex-end;
 }
 
-
-.campo-cartao-pagamento-compras-card-validade input{
+.campo-cartao-pagamento-compras-card-validade input {
     width: 3rem;
 }
 
 /* Término campo cartão de crédito */
-.campo-dados-pix-compras{
+.campo-dados-pix-compras {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
     display: none;
 }
-.campo-dados-pix-compras img{
+
+.campo-dados-pix-compras img {
     width: 12rem;
     margin-top: 1rem;
-    
+
 }
 
-.campo-dados-boleto-imprimir{
+.campo-dados-boleto-imprimir {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin-top: 5rem;
     display: none;
 }
 
-.campo-dados-boleto-imprimir button{
+.campo-dados-boleto-imprimir button {
     width: 20rem;
     height: 4rem;
     font-size: 1.2rem;
-    background:var(--color-fourth);
+    background: var(--color-fourth);
     border: none;
     color: white;
     cursor: pointer;
@@ -431,16 +434,16 @@ video {
 }
 
 
-.container-compras-right{
+.container-compras-right {
     width: 30%;
     height: 70vh;
     margin: 0 2rem;
     margin-top: 2rem;
     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.192);
-    position: relative; 
+    position: relative;
 }
 
-.container-compras-right h2{
+.container-compras-right h2 {
     margin-left: 2rem;
     margin-top: 2rem;
     text-transform: uppercase;
@@ -449,41 +452,41 @@ video {
     font-size: 1.2rem;
 }
 
-.container-compras-right h3{
+.container-compras-right h3 {
     margin-left: 2rem;
     text-transform: uppercase;
     color: var(--color-primary);
-    margin-top: 1rem;    
+    margin-top: 1rem;
 }
 
-.cupom-desconto-compras{
+.cupom-desconto-compras {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
-.cupom-desconto-compras input{
+.cupom-desconto-compras input {
     width: 15rem;
     height: 2rem;
     outline: none;
 }
 
-.cupom-desconto-compras button{
+.cupom-desconto-compras button {
     width: 5rem;
     text-transform: uppercase;
     border: none;
-    background:var(--color-primary);
+    background: var(--color-primary);
     color: #fff;
     cursor: pointer;
 
 }
 
-.total-compras-pagamento{
+.total-compras-pagamento {
     width: 100%;
 }
 
-.subtotal-compras{
+.subtotal-compras {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -492,7 +495,8 @@ video {
     margin-left: 1rem;
 
 }
-.frete-compras{
+
+.frete-compras {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -501,7 +505,8 @@ video {
     margin-left: 1rem;
 
 }
-.total-compras{
+
+.total-compras {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -510,20 +515,757 @@ video {
     margin-left: 1rem;
 }
 
-.finalizar-compra-btn{
+.finalizar-compra-btn {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin-top: 2rem;
-    width: 25rem;
+
 }
 
-.finalizar-compra-btn button{
+.finalizar-compra-btn button {
     width: 23rem;
     height: 3rem;
     border: none;
-    background:var(--color-primary);
+    background: var(--color-primary);
     text-transform: uppercase;
     font-size: 1rem;
     color: #fff;
     cursor: pointer;
+}
+
+
+
+/* Inicio do rodapé */
+.footer-compras {
+    /* grid-area: footer; */
+    /* margin-top: 7rem; */
+    background: #333;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-compras-container {
+    display: flex;
+    justify-content: space-around;
+    height: 12rem;
+    ;
+
+
+}
+
+.footer-compras-menu1 {
+    width: 20%;
+    height: 15rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.footer-compras-menu1 h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer-compras-menu2 {
+    width: 20%;
+    height: 15rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.footer-compras-menu2 h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer-compras-menu3 {
+    width: 20%;
+    height: 15rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.footer-compras-menu1 p {
+    font-size: 1rem;
+}
+
+.footer-compras-menu2 p {
+    font-size: 1rem;
+}
+
+.footer-compras-menu3 p {
+    font-size: 1rem;
+}
+
+.footer-compras-menu3 h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer-form-compras {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-form-compras input {
+    width: 25rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+
+}
+
+.footer-form-compras button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background: red;
+    border: none;
+    color: #fff;
+}
+
+
+.footer-socialmedia-compras {
+    width: 50%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-compras-insta {
+    width: 25%;
+    text-align: center;
+}
+
+.footer-compras-tw {
+    width: 25%;
+    text-align: center;
+}
+
+.footer-compras-face {
+    width: 25%;
+    text-align: center;
+}
+
+.footer-compras-linke {
+    width: 25%;
+    text-align: center;
+}
+
+.footer-compras-insta img {
+    width: 50%;
+}
+
+
+.footer-compras-tw img {
+    width: 50%;
+}
+
+.footer-compras-face img {
+    width: 50%;
+}
+
+.footer-compras-linke img {
+    width: 50%;
+}
+
+
+
+
+/* Configuração para Smartphone */
+@media (min-width: 50px) and (max-width: 450px) {
+    body {
+        background: rgb(0, 17, 255);
+    }
+
+    #container-geral {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "header""main""footer";
+    }
+    
+    .header {
+        grid-area: header;
+        width: 100%;
+        height: 5rem;
+        background: var(--color-fifth);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-compras {
+        width: 20%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--color-secundary)
+    }
+    
+    .label-compras {
+        width: 20%;
+        height: 4rem;
+    
+    }
+    
+    .label-compras img {
+        width: 100%;
+    }
+    
+    .user-compras {
+        width: 20%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        color: var(--color-secundary)
+    }
+    
+    .container-compras {
+        grid-area: main;
+        width: 100%;
+        height: 250vh;
+        background: #eee;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container-compras-left {
+        width: 100%;
+        height: 70vh;
+        margin: 0 2rem;
+        margin-top: 2rem;
+        box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.192);
+        border: 1px solid #c0c0c0;
+    }
+    
+    .container-compras-left h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 2rem;
+        margin-left: 3rem;
+        color: rgb(94, 94, 94);
+        color: var(--color-primary);
+        font-size: 1.2rem;
+    
+    }
+    
+    .container-compras-left p {
+        text-transform: uppercase;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        color: var(--color-primary);
+    
+    }
+    
+    .form-compras {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .form-compras label {
+        display: block;
+        width: 80%;
+        margin-top: 1rem;
+    }
+    
+    .form-compras input {
+        display: block;
+        width: 100%;
+        height: 2rem;
+        outline: none;
+        border: 1px solid #ccc;
+    }
+    
+    .form-compras button {
+        margin-top: 2rem;
+        background: var(--color-fourth);
+        border: none;
+        color: #fff;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    
+    }
+    
+    
+    .new-ser-compras {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .btn-compras {
+        margin-top: 2rem;
+        width: 80%;
+        background: var(--color-fourth);
+        border: none;
+        color: #fff;
+        padding: 1rem 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+    
+    
+    .container-compras-center {
+        width: 85%;
+        height: 70vh;
+        margin: 0 2rem;
+        margin-top: 2rem;
+        box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.192);
+    }
+    
+    .container-compras-center h2 {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+    
+    .formapagamento-compras {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+    
+    
+    .cartao-pagamento-compras {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-transform: uppercase;
+    
+    }
+    
+    .cartao-pagamento-compras i {
+        font-size: 3rem;
+        color: var(--color-fifth)
+    }
+    
+    .pix-pagamento-compras {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    
+    .pix-pagamento-compras i {
+        font-size: 3rem;
+        color: var(--color-fifth)
+    }
+    
+    .boleto-pagamento-compras {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    
+    .boleto-pagamento-compras i {
+        font-size: 3rem;
+        color: var(--color-fifth);
+    
+    }
+    
+    
+    /* Campo de pagameno cartão de crédito */
+    .campo-dados-compras {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        display: none;
+        width: 100%;
+    
+    }
+    
+    .campo-dados-compras input {
+        height: 1.5rem;
+        outline: none;
+        margin-bottom: 0.5rem;
+        ;
+    }
+    
+    .campo-cartao-pagamento-compras {
+        /* width: 24rem; */
+        height: 15rem;
+    
+    }
+    
+    .campo-cartao-pagamento-compras label {
+        display: block;
+    
+    }
+    
+    .campo-cartao-pagamento-compras input {
+        display: block;
+    }
+    
+    .campo-cartao-pagamento-compras-card {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-end;
+    
+    }
+    
+    .campo-cartao-pagamento-compras-card, #card-compras {
+        width: 15rem;
+        outline: none;
+    }
+    
+    .campo-cartao-pagamento-compras-card, #card-compras-code {
+        width: 3rem;
+        outline: none;
+    
+    }
+    
+    .campo-cartao-pagamento-compras-card-data input {
+        width: 20rem;
+        outline: none;
+    }
+    
+    .campo-cartao-pagamento-compras-card-validade {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .campo-cartao-pagamento-compras-card-validade input {
+        width: 3rem;
+    }
+    
+    /* Término campo cartão de crédito */
+    .campo-dados-pix-compras {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        display: none;
+    }
+    
+    .campo-dados-pix-compras img {
+        width: 12rem;
+        margin-top: 1rem;
+    
+    }
+    
+    .campo-dados-boleto-imprimir {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        display: none;
+    }
+    
+    .campo-dados-boleto-imprimir button {
+        width: 20rem;
+        height: 4rem;
+        font-size: 1.2rem;
+        background: var(--color-fourth);
+        border: none;
+        color: white;
+        cursor: pointer;
+    
+    }
+    
+    
+    .container-compras-right {
+        width: 100%;
+        height: 70vh;
+        margin: 0 2rem;
+        margin-top: 2rem;
+        box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.192);
+        position: relative;
+    }
+    
+    .container-compras-right h2 {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+    .container-compras-right h3 {
+        margin-left: 2rem;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        margin-top: 1rem;
+    }
+    
+    .cupom-desconto-compras {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
+    .cupom-desconto-compras input {
+        width: 15rem;
+        height: 2rem;
+        outline: none;
+    }
+    
+    .cupom-desconto-compras button {
+        width: 5rem;
+        text-transform: uppercase;
+        border: none;
+        background: var(--color-primary);
+        color: #fff;
+        cursor: pointer;
+    
+    }
+    
+    .total-compras-pagamento {
+        width: 100%;
+    }
+    
+    .subtotal-compras {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        gap: 10rem;
+        margin-left: 1rem;
+    
+    }
+    
+    .frete-compras {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        gap: 10rem;
+        margin-left: 1rem;
+    
+    }
+    
+    .total-compras {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        gap: 10rem;
+        margin-left: 1rem;
+    }
+    
+    .finalizar-compra-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    
+    }
+    
+    .finalizar-compra-btn button {
+        width: 20rem;
+        height: 3rem;
+        border: none;
+        background: var(--color-primary);
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    
+    
+    /* Inicio do rodapé */
+    .footer-compras {
+        /* grid-area: footer; */
+        /* margin-top: 7rem; */
+        background: #333;
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    
+    .footer-compras-container {
+        display: flex;
+        justify-content: space-around;
+        height: 12rem;
+        flex-wrap: wrap;
+    
+    
+    }
+    
+    .footer-compras-menu1 {
+        width: 60%;
+        height: 15rem;
+        color: #fff;
+        margin-top: 2rem;
+    }
+    
+    .footer-compras-menu1 h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .footer-compras-menu2 {
+        width: 60%;
+        height: 15rem;
+        color: #fff;
+        margin-top: 2rem;
+    }
+    
+    .footer-compras-menu2 h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .footer-compras-menu3 {
+        width: 60%;
+        height: 15rem;
+        color: #fff;
+        margin-top: 2rem;
+    }
+    
+    .footer-compras-menu1 p {
+        font-size: 1rem;
+    }
+    
+    .footer-compras-menu2 p {
+        font-size: 1rem;
+    }
+    
+    .footer-compras-menu3 p {
+        font-size: 1rem;
+    }
+    
+    .footer-compras-menu3 h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .footer-form-compras {
+        width: 90%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 38rem;
+    }
+    
+    .footer-form-compras input {
+        width: 25rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        border: none;
+        outline: none;
+    
+    }
+    
+    .footer-form-compras button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        background: red;
+        border: none;
+        color: #fff;
+    }
+    
+    
+    .footer-socialmedia-compras {
+        width: 50%;
+        height: 8rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .footer-compras-insta {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .footer-compras-tw {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .footer-compras-face {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .footer-compras-linke {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .footer-compras-insta img {
+        width: 80%;
+    }
+    
+    
+    .footer-compras-tw img {
+        width: 80%;
+    }
+    
+    .footer-compras-face img {
+        width: 80%;
+    }
+    
+    .footer-compras-linke img {
+        width: 80%;
+    }
+}
+
+/* Configuração para Tablet */
+@media (min-width: 451px) and (max-width: 1024px) {
+    body {
+        background: rgb(0, 255, 55);
+    }
+}
+
+
+/* Configuração para Notebook */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        background: rgb(214, 0, 132);
+    }
+}
+
+/* Configuração para Desktop */
+@media (min-width: 1281px) {
+    body {
+        background: none;
+    }
 }

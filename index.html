@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/script.js" defer></script>
-    <title>Página de compras</title>
-  </head>
-  <body>
-    <div id="container-geral">
-      <header class="header">
-        <div class="logo-compras">
-          <h1>Shop Pet</h1>
-        </div>
-        <div class="label-compras">
-          <img src="/img/label.png" alt="" />
-        </div>
-        <div class="user-compras">
-          <i class="bx bxs-user-circle"></i>
-        </div>
-      </header>
-      <main class="container-compras">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/script.js" defer></script>
+  <title>Página de compras</title>
+</head>
+
+<body>
+  <div id="container-geral">
+    <header class="header">
+      <div class="logo-compras">
+        <h1>Shop Pet</h1>
+      </div>
+      <div class="label-compras">
+        <img src="/img/label.png" alt="" />
+      </div>
+      <div class="user-compras">
+        <i class="bx bxs-user-circle"></i>
+      </div>
+    </header>
+    <main class="main container-compras-main">
+      <div class="container-compras">
         <div class="container-compras-left">
           <h2>1 - dados pessoais</h2>
           <p>faça o seu login</p>
@@ -43,35 +43,17 @@
           <h2>2 - Forma de pagamento</h2>
           <div class="formapagamento-compras">
             <div class="cartao-pagamento-compras">
-              <label
-                ><input
-                  name="card-pag"
-                  id="card-pag"
-                  value="card-pag"
-                  type="radio"
-              /></label>
+              <label><input name="card-pag" id="card-pag" value="card-pag" type="radio" /></label>
               <i class="bx bxs-credit-card"></i>
               <p>cartão de crédito</p>
             </div>
             <div class="pix-pagamento-compras">
-              <label
-                ><input
-                  name="pix-pag"
-                  id="pix-pag"
-                  value="pix-pag"
-                  type="radio"
-              /></label>
+              <label><input name="pix-pag" id="pix-pag" value="pix-pag" type="radio" /></label>
               <i class="bx bx-money-withdraw"></i>
               <p>pix</p>
             </div>
             <div class="boleto-pagamento-compras">
-              <label
-                ><input
-                  name="boleto-pag"
-                  id="boleto-pag"
-                  value="boleto-pag"
-                  type="radio"
-              /></label>
+              <label><input name="boleto-pag" id="boleto-pag" value="boleto-pag" type="radio" /></label>
               <i class="bx bxs-barcode"></i>
               <p>boleto</p>
             </div>
@@ -79,14 +61,8 @@
           <div class="campo-dados-compras">
             <div class="campo-cartao-pagamento-compras">
               <div class="campo-cartao-pagamento-compras-card">
-                <label
-                  >Número do cartão<input type="number" id="card-compras"
-                /></label>
-                <label
-                  >Código de segurança<input
-                    type="number"
-                    id="card-compras-code"
-                /></label>
+                <label>Número do cartão<input type="number" id="card-compras" /></label>
+                <label>Código de segurança<input type="number" id="card-compras-code" /></label>
               </div>
               <div class="campo-cartao-pagamento-compras-card-data">
                 <label>Nome no cartão<input type="text" /></label>
@@ -120,7 +96,7 @@
               <p>Subtotal</p>
               <span>R$ 00,00</span>
             </div>
-            
+
             <div class="frete-compras">
               <p>Frete</p>
               <span>R$ 00,00</span>
@@ -134,11 +110,65 @@
             </div>
           </div>
           <div class="itens-pedido-compras">
-            <h2>Intens do pedido</h2>
+            <h2>Itens do pedido</h2>
           </div>
         </div>
-      </main>
-      <footer></footer>
-    </div>
-  </body>
+      </div>
+    </main>
+
+
+    <!-- Inicio do rodapé -->
+    <footer class="footer-compras">
+      <div class="footer-compras-container">
+        <div class="footer-compras-menu1">
+          <h2>Sobre nós</h2>
+          <p>Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Dolore, magni
+            libero illum repellat distinctio est fuga vero.
+            Autem ipsum temporibus vel officia,
+            deserunt possimus nam mollitia
+            veritatis dolor eum officiis.</p>
+        </div>
+        <div class="footer-compras-menu2">
+          <h2>Institucional</h2>
+          <p>Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Dolore, magni
+            libero illum repellat distinctio est fuga vero.
+            Autem ipsum temporibus vel officia,
+            deserunt possimus nam mollitia
+            veritatis dolor eum officiis.</p>
+        </div>
+        <div class="footer-compras-menu3">
+          <h2>Atendimento</h2>
+          <p>Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Dolore, magni
+            libero illum repellat distinctio est fuga vero.
+            Autem ipsum temporibus vel officia,
+            deserunt possimus nam mollitia
+            veritatis dolor eum officiis.</p>
+        </div>
+      </div>
+      <div class="footer-form-compras">
+        <input type="email" placeholder="Digite aqui o seu e-mail para receber novidades e promoções">
+        <button>Enviar</button>
+      </div>
+      <div class="footer-socialmedia-compras">
+        <div class="footer-compras-insta">
+          <img src="img/insta.png" alt="">
+        </div>
+        <div class="footer-compras-tw">
+          <img src="img/tw.png" alt="">
+        </div>
+        <div class="footer-compras-face">
+          <img src="img/face.png" alt="">
+        </div>
+        <div class="footer-compras-linke">
+          <img src="img/linke.png" alt="">
+        </div>
+
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
