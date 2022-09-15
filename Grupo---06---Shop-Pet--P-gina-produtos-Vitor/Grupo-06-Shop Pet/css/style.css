@@ -539,7 +539,7 @@ footer .link1 a{
         opacity:1;   
     }
     @media (max-width:1418px){
-        .icons{
+            .icons{
             margin-top:-1190px;      
             }
             .navbar.active{
@@ -551,7 +551,6 @@ footer .link1 a{
             .logo span{
                 margin-left:-70px;
             }
-    
         header .icons #menu-bars{
             display: inline-block;
         }
