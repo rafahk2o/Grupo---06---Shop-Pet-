@@ -657,7 +657,12 @@ footer .link1 a{
     align-items: center;
     justify-content: center;
     width: 82%;
+    background-color: #333;
     
+}
+.ajustes-social-btns .buttonsocialmedia{
+    background-color: #333;
+    border: none;
 }
 .ajustes-social-btns{
     display: flex;
@@ -723,7 +728,9 @@ footer .link1 a{
 /* Término do rodapé */
 
 @media (max-width:1418px){
-    
+    .img-magnifier-glass{
+        display:none;
+    }
     .icons{
     margin-top:-1190px;      
     }
