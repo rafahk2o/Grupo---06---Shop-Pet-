@@ -699,6 +699,64 @@ video {
         background: rgb(0, 17, 255);
     }
 
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 9%; left: 0; right: 0;
+        background: #264653;
+        border-top: 0.16px solid rgba(0, 0, 0, .2);
+        border-bottom: 0.16px solid rgba(0, 0, 0, .2);
+        padding: 15px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar a{
+        color: #010101;
+    }
+    header .navbar .dropdown{
+        display: none;
+    }
+
+    header .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        display:block;
+        padding:1.5rem;
+        margin:15.6px;
+        font: size 29px;;
+        background: #e6e6e6;
+    }
+    #search-form #search-box{
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+
+
+
+.icons{
+    margin-top:-1190px;      
+    }
+    .navbar.active{
+        margin-top: 50px;
+    }
+    #search-box{
+        margin-left:85px;
+    }
+    .logo span{
+        margin-left:-70px;
+    }
+
+
+
+
     #container-geral {
         display: grid;
         grid-template-columns: 100%;
