@@ -6,22 +6,99 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css" />
   <script src="/js/script.js" defer></script>
   <title>Página de compras</title>
 </head>
 
 <body>
-  <div id="container-geral">
+  <div id="container">
     <header class="header">
+      <!--Logo-->
+      <div class="box-logo">
+          <h1><span></span></h1>
+      </div>
+      <!--Navegação cabeçalho-->
+      <nav class="navbar">
+          <a href="index.html">Página inicial</a>
+          <ul class="menu">
+              <li>
+                  <a href="#compras">Ir ás compras &#9660;</a>
+                  <ul class="dropdown">
+                      <li><a href="#">Acessórios</a></li>
+                      <li><a href="#">Remédios</a></li>
+                      <li><a href="#">Rações</a></li>
+                      <li><a href="#">Brinquedos</a></li>
+                      <li><a href="#">Não sei 1</a></li>
+                      <li><a href="#">Não sei 2</a></li>
+                      <li><a href="#">Não sei 3</a></li>
+                      <li><a href="#">Não sei 4</a></li>
+                      <li><a href="#">Não sei 5</a></li>
+                      <li><a href="#">Não sei 6</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <a href="#sobre">Sobre</a>
+          <a href="#serviços">Serviços</a>
+          <a href="#contatos">Contatos</a>
+      </nav>
+      <!--Término da Navegação cabeçalho-->
+      <!-- icones de carrinho, Perfil, pesquisa e menu responsivo-->
+      <div  class="icons">
+          <!-- <i id="menu-bars" class='bx bx-menu'></i> -->
+          <i id="menu-bars" class="fas fa-bars"></i>
+          <i id="search-btn" class="fas fa-search"></i>
+          <i id="cart-btn" class="fas fa-shopping-cart"></i>
+          <div id="login-btn" class="fas fa-user"></div>
+      </div>
+      <!-- Barra de pesquisa oculta -->
+      <form action="" class="search-form">
+          <input type="search" placeholder="Procure aqui..." id="search-box">
+          <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <!-- Carrinho de compra oculto -->
+      <div class="shopping-cart">
+          <div class="header-cart-buy">
+              Carrinho
+          </div>
+          <div class="box-cart-buy">
+
+          </div>
+          <div class="box-cart-buy">
+
+          </div>
+          <div class="box-cart-buy">
+
+          </div>
+          <div class="box-cart-buy">
+
+          </div>
+          <a href="#" class="btn-cart-buy">Finalizar compra</a>
+      </div>
+
+      <!-- Formulário de login oculto -->
+      <form action="" class="login-form">
+          <h3>Entre aqui</h3>
+          <input type="email" placeholder="entre com seu email aqui" class="box-login">
+          <input type="password" placeholder="entre com sua senha aqui" class="box-login">
+          <div class="remember">
+              <input type="checkbox" name="remember-me" id="remember-me">
+              <label for="remember-me">Lembrar de mim</label>
+          </div>
+          <input type="submit" value="Entre Agora" class="btn-login-form">
+          <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+          <p>Não tem uma conta ainda? <a href="#">Crie uma agora</a></p>
+      </form>
+  </header>
+    
+
+
+
+
       <div id="logo-compras">
         <h1><span></span></h1>
-      </div>
-      <div class="label-compras">
-        <img src="/img/label.png" alt="" />
-      </div>
-      <div class="user-compras">
-        <i class="bx bxs-user-circle"></i>
       </div>
     </header>
     <main class="main container-compras-main">
