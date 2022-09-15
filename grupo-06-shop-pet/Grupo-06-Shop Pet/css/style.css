@@ -315,7 +315,7 @@ label{
 section{
     min-height: 80vh;
     max-height: 80vh;
-    width: 100%;
+    /* max-width: 100%; */
     background-color: ivory;
   }
 
@@ -324,16 +324,6 @@ section{
       align-items: center;
       justify-content: space-around;
   }
-/* @media (max-width: 968px) {
-        
-  } */
-
-  /* @media (max-width: 690px){
-  } */
-
-  /* @media (min-width: 200px) {
-  } */
-
 
 
 /* estiliza o botao */
@@ -524,7 +514,6 @@ main .article-container p em{
     margin-bottom: 20px;
 }
 
-
 /* Término do corpo */
 
 
@@ -544,7 +533,6 @@ footer{
 
     box-sizing:border-box;
     padding-block-start: 40px;
-
 }
 
 /* Organiza os 3 divs principais do footer */
@@ -598,10 +586,8 @@ footer{
 .footer-container .first-collumn-footer p:last-child {
     margin-top: 40px;
 }
-
-
-
 /* Fim do footer */
+
 
 section{
     display: flex;
@@ -625,7 +611,7 @@ section picture {
   justify-content: space-around;
 }
 
-
+/* Classes da animacao no scroll */
 .reveal{
   position: relative;
   transform: translateY(150px);
@@ -636,4 +622,68 @@ section picture {
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+
+@media (min-width: 300px) {
+    /* teste */
+    * {
+        /* background-color: rgb(25, 27, 22); */
+    }
+} 
+
+@media (max-width: 690px){
+    /* teste */
+    * {
+        z-index: 2198054;
+        /* background-color: lawngreen; */
+    }
+
+    section picture img:last-child{
+        /* background-color: lightcoral; */
+        display: none;
+    }
+
+    article picture img{
+        width: 400px;
+        height: 400px;
+    }
+}
+  
+  @media (max-width: 500px) {
+    /* teste */
+    * {
+        z-index: 2198054;
+        /* background-color: rgb(223, 0, 252); */
+    }
+
+    section picture img:last-child{
+        /* background-color: lightcoral; */
+        display: none;
+    }
+
+    section picture img:first-child{
+        display: none;
+    }
+
+    article picture img{
+        width: 300px;
+        height: 300px;
+    }
+        
+    section div h3{
+        font-size: 10vw;
+    }
+
+    main .article-container p em{
+        font-size: 10vw;
+    }
+
+    .text-main h3 {
+        font-size: 8vw;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
 }
