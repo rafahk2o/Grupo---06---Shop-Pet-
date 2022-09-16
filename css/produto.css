@@ -59,6 +59,14 @@ time, mark, audio, video {
 header .box-logo{
     width: 225px;
 }
+.box-logo h1{
+    width: 5rem;
+    height: 5rem;
+    background: url(../image/logoshoppet.png) no-repeat center center;
+    background-size: 6rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
 header .logo{
     color: #e9c46a;
     font-size: 22px;
