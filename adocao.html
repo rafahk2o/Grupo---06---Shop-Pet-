@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Renan Reis">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style-adoption.css">
+    <link rel="stylesheet" href="css/adocao.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="js/adocao.js" defer></script>
+    <title>Shop Pet</title>
+</head>
+
+<body>
+    <div id="container">
+        <!--Inicio do cabeçalho-->
+        <header class="header">
+            <!--Logo-->
+            <div class="box-logo">
+                <a href="index.html"><h1><span></span></h1></a>
+            </div>
+            <!--Navegação cabeçalho-->
+            <nav class="navbar">
+                <a href="index.html">Página inicial</a>
+                <ul class="menu">
+                    <li>
+                        <a href="produtos.html">Ir ás compras &#9660;</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Acessórios</a></li>
+                            <li><a href="#">Remédios</a></li>
+                            <li><a href="#">Rações</a></li>
+                            <li><a href="#">Brinquedos</a></li>
+                            <li><a href="#">Não sei 1</a></li>
+                            <li><a href="#">Não sei 2</a></li>
+                            <li><a href="#">Não sei 3</a></li>
+                            <li><a href="#">Não sei 4</a></li>
+                            <li><a href="#">Não sei 5</a></li>
+                            <li><a href="#">Não sei 6</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#sobre">Sobre</a>
+                <a href="adocao.html">Adoção</a>
+                <a href="#contatos">Contatos</a>
+            </nav>
+            <!--Término da Navegação cabeçalho-->
+            <!-- icones de carrinho, Perfil, pesquisa e menu responsivo-->
+            <div class="icons">
+                <i id="menu-bars" class="fas fa-bars"></i>
+                <i id="search-btn" class="fas fa-search"></i>
+                <a id="cart-btn" class="fas fa-shopping-cart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+            <!-- Barra de pesquisa oculta -->
+            <form action="" class="search-form">
+                <input type="search" placeholder="Procure aqui..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <!-- Carrinho de compra oculto -->
+            <div class="shopping-cart">
+                <div class="header-cart-buy">
+                    Carrinho
+                </div>
+                <div class="box-cart-buy">
+
+                </div>
+                <div class="box-cart-buy">
+
+                </div>
+                <div class="box-cart-buy">
+
+                </div>
+                <div class="box-cart-buy">
+
+                </div>
+                <a href="pagamentos.html" class="btn-cart-buy">Finalizar compra</a>
+            </div>
+
+            <!-- Formulário de login oculto -->
+            <form action="" class="login-form">
+                <h3>Entre aqui</h3>
+                <input type="email" placeholder="entre com seu email aqui" class="box-login">
+                <input type="password" placeholder="entre com sua senha aqui" class="box-login">
+                <div class="remember">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">Lembrar de mim</label>
+                </div>
+                <input type="submit" value="Entre Agora" class="btn-login-form">
+                <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+                <p>Não tem uma conta ainda? <a href="#">Crie uma agora</a></p>
+            </form>
+        </header>
+        <!--Término do cabeçalho-->
+
+        <!-- Inicio do corpo -->
+        <main class="main" style="text-align: center;">
+            <section>
+                <div>               
+                    <h3><span>Buscando algum bixinho especial?</span></h3>
+
+                    <picture>
+                       <img src="image/afwd.png" alt="">
+                       <img src="image/safas.png" alt="">
+                       <img src="image/asgk.png" alt="">
+                    </picture>
+
+                    <br>
+                   <a href=""> <button class="button-27" role="button">Venha e adote um pet</button> </a>
+                </div>  
+            </section>
+        
+            <div class="container">
+                <article>
+                    <div class="article-container reveal" onscroll="reveal()">
+                            <p>
+                                <em>
+                                Que tal arrumar um amigo?
+                                </em>
+
+                                Se você está buscando um companheiro para dividir a cama com você, para compartilhar aquele pedaço extra de pizza ou até mesmo para detectar fantasmas, talvez um pet seja 
+                                a escolha perfeita. Além de ser um ótimo protetor para a casa, eles serão excelente amigos e não vão te abandonar nunquinha, mesmo se você for um pessímo cozinheiro ou 
+                                ouvir sertanejo universitário. Viu, só há vantagens em adotar um novo coleguinha. Então não perca tempo e venha escolher o pet ideal para o seu lar
+                            </p>
+                        
+                            <picture>
+                                <img src="image/cao-e-gato.png" alt="">
+                            </picture>
+                        </div>
+
+                        <div class="article-container reveal">
+                            <picture>
+                                <img src="image/gato-com-coracao.png" alt="">
+                            </picture>
+
+                            <p> 
+                            <em class="title2">
+                               Tornarmos o processo mais
+                                fácil e menos burocratico o possível
+                            </em>
+                                Se você já procurou algum bichinho online sabe como pode ser frustrante algumas questões como o deslocamento do animal, falta de contato com o doador e até mesmo saber algumas 
+                                informações extras, como "esse cachorro é um possível homicida?". Por esses motivos, buscamos facilitar ao máximo todas as eventuais dificuldades e curiosidades que podem ocorrer, 
+                                além do nosso suporte 24 horas para sanar quaisquer dúvidas e até mesmo inseguranças que surgirem. E claro, tudo isso 100% gratuito.
+                            </p>
+                        </div>
+                </article>
+            </div>
+
+
+
+            <div class="container">
+                <div class="text-main reveal">
+                    <h3>E então...</h3>
+                    <p>
+                        Com todas essas vantagens, só não adota quem não quer. Então pra que perder tempo, vamos e traga felicidade para uma criaturinha tão inocente, que além de companhia, também trará 
+                        felicidade a você.
+                    </p>
+                </div>
+
+                <div class="reveal" style="text-align: center;">
+                    <h3>Pronto para adotar?</h3>
+                    <br>
+                    <button class="button-27" role="button">Venha e adote um pet</button>
+                </div>
+                <br><br><br><br><br>
+
+              </div>
+        </main>
+        <!-- Término do corpo -->
+
+
+        <!-- Inicio do rodapé -->
+        <footer class="footer">
+            <div class="footer-container">
+                
+                <div class="first-collumn-footer"> 
+                    <h3 class="titulo-footer">Logo</h3>
+                    <p>Contact Us</p>
+                    <p>5343 Somewhere over the rainbow</p>
+                    <p><a href="mailto:name@email.com">Email Us</a></p>
+                    <p>Bla bla All Rights Reserved</p>
+                </div>
+
+                <div class="second-collumn-footer">
+                    <h3 class="titulo-footer">Medias Sociais</h3>
+                    <p>Insta</p>
+                    <p>Discord</p>
+                    <p>Twitter</p>
+                </div>
+
+                <div class="third-column-footer">
+                    <h3 class="titulo-footer">Legal</h3>
+                    <p>Politica de Privacidade</p>
+                    <p>Termos de Uso</p>
+                    <p>Sla</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Término do rodapé -->
+    </div>
+</body>
+
+</html>

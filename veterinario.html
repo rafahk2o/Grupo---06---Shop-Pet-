@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolas Moura">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/veterinario.css">
+    <title>Shop Pet</title>
+</head>
+
+<body>
+    <div id="container">
+        <!--Inicio do cabeçalho-->
+        <header class="header">
+            <!--Logo-->
+            <div class="box-logo">
+               <a href="index.html"><h1><span></span></h1></a>
+            </div>
+            <!--Navegação cabeçalho-->  
+            <nav class="navbar">
+                <a href="index.html">Página inicial</a>
+                <ul class="menu">
+                    <li>
+                        <a href="produtos.html">Ir ás compras &#9660;</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Acessórios</a></li>
+                            <li><a href="#">Remédios</a></li>
+                            <li><a href="#">Rações</a></li>
+                            <li><a href="#">Brinquedos</a></li>
+                            <li><a href="#">Não sei 1</a></li>
+                            <li><a href="#">Não sei 2</a></li>
+                            <li><a href="#">Não sei 3</a></li>
+                            <li><a href="#">Não sei 4</a></li>
+                            <li><a href="#">Não sei 5</a></li>
+                            <li><a href="#">Não sei 6</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#sobre">Sobre</a>
+                <a href="adocao.html">Adoção</a>
+                <a href="#contatos">Contatos</a>
+            </nav>
+            <!--Término da Navegação cabeçalho-->
+            <!-- icones de carrinho, Perfil, pesquisa e menu responsivo-->
+            <div  class="icons">
+                <!-- <i id="menu-bars" class='bx bx-menu'></i> -->
+                <i id="menu-bars" class="fas fa-bars"></i>
+                <i id="search-btn" class="fas fa-search"></i>
+                <i id="cart-btn" class="fas fa-shopping-cart"></i>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+            <!-- Barra de pesquisa oculta -->
+            <form action="" class="search-form">
+                <input type="search" placeholder="Procure aqui..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+      
+            <!-- Carrinho de compra oculto -->
+            <div class="shopping-cart">
+                <div class="header-cart-buy">
+                    Carrinho
+                </div>
+                <div class="box-cart-buy">
+      
+                </div>
+                <div class="box-cart-buy">
+      
+                </div>
+                <div class="box-cart-buy">
+      
+                </div>
+                <div class="box-cart-buy">
+      
+                </div>
+                <a href="pagamentos.html" class="btn-cart-buy">Finalizar compra</a>
+            </div>
+      
+            <!-- Formulário de login oculto -->
+            <form action="" class="login-form">
+                <h3>Entre aqui</h3>
+                <input type="email" placeholder="entre com seu email aqui" class="box-login">
+                <input type="password" placeholder="entre com sua senha aqui" class="box-login">
+                <div class="remember">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">Lembrar de mim</label>
+                </div>
+                <input type="submit" value="Entre Agora" class="btn-login-form">
+                <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+                <p>Não tem uma conta ainda? <a href="#">Crie uma agora</a></p>
+            </form>
+        </header>
+        <!--Término do cabeçalho-->
+
+        <!-- Inicio do corpo -->
+        <!-- <main class="main">
+
+        </main> -->
+        <!-- Término do corpo -->
+        <!-- Inicio do banner rotativo -->
+        <div class="main-container">
+            <div class="banner-topo-vet">
+                <img src="image/9.png" alt="imagem veterinário">
+            </div>
+            <div class="banner-topo-vet-text">
+                <h2>Veterinário</h2>
+                <p>Amamos cuidar do seu PET</p>
+            </div>
+            <div class="icons-services">
+                <div class="icons-services1">
+                    <img src="image/icons/estetoscopio.png" alt="estetoscópio">
+                    <h2>Diagnósticos Completos</h2>
+                    <p>
+                        adipisicing elit. Atque, pariatur ab voluptas
+                        adipisicing elit. Atque, pariatur ab voluptas
+                        adipisicing elit. Atque, pariatur ab voluptas
+
+                    </p>
+                </div>
+
+                <div class="icons-services2">
+                    <img src="image/icons/guarantee.png" alt="selo de qualidade">
+                    <h2>Profissionais Certificados</h2>
+                    <p>
+                        adipisicing elit. Atque, pariatur ab voluptas
+                        adipisicing elit. Atque, pariatur ab voluptas
+                        adipisicing elit. Atque, pariatur ab voluptas
+
+                    </p>
+                </div>
+                <div class="icons-services3">
+                    <img src="image/icons/like.png" alt="coração">
+                    <h2>Atendimento 24h</h2>
+                    <p>
+                        adipisicing elit. Atque, pariatur ab voluptas
+                        adipisicing elit. Atque, pariatur ab voluptas
+                        adipisicing elit. Atque, pariatur ab voluptas
+
+                    </p>
+                </div>
+
+                <div class="icons-services4">
+                    <li><img src="image/icons/belt.png" alt="coleira"></li>
+                    <h2>Os melhores Profissionais</h2>
+                    <p>
+                        adipisicing elit. Atque, pariatur ab voluptas
+                        adipisicing elit. Atque, pariatur ab voluptas
+                        adipisicing elit. Atque, pariatur ab voluptas
+
+                    </p>
+                </div>
+            </div>
+            <section class="conteudo-central">
+                <div class="content-left-vet">
+                    <img src="image/5.jpg" alt="">
+                </div>
+                <div class="content-right-vet">
+                    <div class="btn-content-vet1">
+                        <a href="#" id="btn-content-vet1-btn">01</a>
+
+                    </div>
+                    <div class="btn-content-vet2">
+                        <a href="#" id="btn-content-vet2-btn">02</a>
+
+                    </div>
+                    <div class="btn-content-vet3">
+                        <a href="#" id="btn-content-vet3-btn">03</a>
+
+                    </div>
+                    <div class="btn-content-content1">
+                        <h2>Clinícas de <br>excelência</h2>
+                        <p>adipisicing elit. Atque, pariatur ab voluptas<br>
+                            adipisicing elit. Atque, pariatur ab voluptas<br>
+                            adipisicing elit. Atque, pariatur ab voluptas
+                        </p>
+                    </div>
+                    <div class="btn-content-content2">
+                        <h2>Antedemos em <br>todo o Brasil</h2>
+                        <p>adipisicing elit. Atque, pariatur ab voluptas<br>
+                            adipisicing elit. Atque, pariatur ab voluptas<br>
+                            adipisicing elit. Atque, pariatur ab voluptas
+                        </p>
+                    </div>
+                    <div class="btn-content-content3">
+                        <h2>Equipamentos de <br>ponta</h2>
+                        <p>adipisicing elit. Atque, pariatur ab voluptas<br>
+                            adipisicing elit. Atque, pariatur ab voluptas<br>
+                            adipisicing elit. Atque, pariatur ab voluptas
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="veterinario">
+                <h2>Nossos Profissionais</h2>
+                <hr>
+                <div class="medicos-vet-container">
+                    <div class="medicos-vet card1">
+                        <div class="medicos-vet-img">
+                            <img src="image/vet1.png" alt="">
+                        </div>
+                        <div class="medicos-vet-text1">
+                            <h3>Sandra Lee</h3>
+                            <p>Lorem ipsum dolor sit amet
+                                consectetur adipisicing
+                                elit. Laborum, neque. </p>
+                        </div>
+                    </div>
+                    <div class="medicos-vet card2">
+                        <div class="medicos-vet-img">
+                            <img src="image/vet2.png" alt="">
+                        </div>
+                        <div class="medicos-vet-text2">
+                            <h3>Sandra Lee</h3>
+                            <p>Lorem ipsum dolor sit amet
+                                consectetur adipisicing
+                                elit. Laborum, neque. </p>
+                        </div>
+                    </div>
+                    <div class="medicos-vet card3">
+                        <div class="medicos-vet-img">
+                            <img src="image/vet3.png" alt="">
+                        </div>
+                        <div class="medicos-vet-text3">
+                            <h3>Sandra Lee</h3>
+                            <p>Lorem ipsum dolor sit amet
+                                consectetur adipisicing
+                                elit. Laborum, neque. </p>
+                        </div>
+                    </div>
+                    <div class="medicos-vet card4">
+                        <div class="medicos-vet-img">
+                            <img src="image/vet4.png" alt="">
+                        </div>
+                        <div class="medicos-vet-text4">
+                            <h3>Sandra Lee</h3>
+                            <p>Lorem ipsum dolor sit amet
+                                consectetur adipisicing
+                                elit. Laborum, neque. </p>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+        </section>
+
+    </div>
+
+    </div>
+
+    <!-- Término do banner rotativo -->
+    <!-- Inicio do rodapé -->
+    <footer class="footer-vet">
+        <div class="footer-vet-container">
+            <div class="footer-vet-menu1">
+                <h2>Sobre nós</h2>
+                <p>Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Dolore, magni
+                    libero illum repellat distinctio est fuga vero.
+                    Autem ipsum temporibus vel officia,
+                    deserunt possimus nam mollitia
+                    veritatis dolor eum officiis.</p>
+            </div>
+            <div class="footer-vet-menu2">
+                <h2>Institucional</h2>
+                <p>Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Dolore, magni
+                    libero illum repellat distinctio est fuga vero.
+                    Autem ipsum temporibus vel officia,
+                    deserunt possimus nam mollitia
+                    veritatis dolor eum officiis.</p>
+            </div>
+            <div class="footer-vet-menu3">
+                <h2>Atendimento</h2>
+                <p>Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Dolore, magni
+                    libero illum repellat distinctio est fuga vero.
+                    Autem ipsum temporibus vel officia,
+                    deserunt possimus nam mollitia
+                    veritatis dolor eum officiis.</p>
+            </div>
+        </div>
+        <div class="footer-form">
+            <input type="email" placeholder="Digite aqui o seu e-mail para receber novidades e promoções">
+            <button>Enviar</button>
+        </div>
+        <div class="footer-socialmedia">
+            <div class="footer-vet-insta">
+                <img src="image/insta.png" alt="">
+            </div>
+            <div class="footer-vet-tw">
+                <img src="image/tw.png" alt="">
+            </div>
+            <div class="footer-vet-face">
+                <img src="image/face.png" alt="">
+            </div>
+            <div class="footer-vet-linke">
+                <img src="image/linke.png" alt="">
+            </div>
+            
+        </div>
+    </footer>
+    <!-- Término do rodapé -->
+    </div>
+    <!--Link JavaScript-->
+    <script type="text/javascript" src="js/veterinario.js"></script>
+</body>
+
+</html>
