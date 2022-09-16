@@ -67,6 +67,28 @@ btn3.addEventListener("click", () => {
 
 // fim conteúdo central cards azuis
 
+//Menu responsivo do cabeçalho
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+  cart.classList.remove('active');
+  searchForm.classList.remove('active');
+  loginForm.classList.remove('active');
+});
+
+//Banner Rotativo
+let banner = 1;
+setInterval(function(){
+    document.getElementById('radio' + banner).checked = true;
+    banner++;
+    if(banner > 2){
+        banner = 1;
+    }
+}, 5000);
 
 
 
