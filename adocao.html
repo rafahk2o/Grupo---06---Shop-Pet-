@@ -8,12 +8,12 @@
     <meta name="author" content="Renan Reis">
     <!--Link CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style-adoption.css">
-    <link rel="stylesheet" href="css/adocao.css">
+    <link rel="stylesheet" href="../Grupo-06-Shop Pet/css/adocao.css">
+    <link rel="stylesheet" href="../Grupo-06-Shop Pet/css/style.css">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <script src="js/adocao.js" defer></script>
+    <script src="../Grupo-06-Shop Pet/js/script.js" defer></script>
     <title>Shop Pet</title>
 </head>
 
@@ -23,7 +23,7 @@
         <header class="header">
             <!--Logo-->
             <div class="box-logo">
-                <a href="index.html"><h1><span></span></h1></a>
+                <h1 class="logo"><span><img src="image/logoshoppet.png" alt="logo Shop Pet"></span></h1>
             </div>
             <!--Navegação cabeçalho-->
             <nav class="navbar">
@@ -54,7 +54,7 @@
             <div class="icons">
                 <i id="menu-bars" class="fas fa-bars"></i>
                 <i id="search-btn" class="fas fa-search"></i>
-                <a id="cart-btn" class="fas fa-shopping-cart"></a>
+                <i id="cart-btn" class="fas fa-shopping-cart"></i>
                 <div id="login-btn" class="fas fa-user"></div>
             </div>
             <!-- Barra de pesquisa oculta -->
@@ -106,13 +106,15 @@
                     <h3><span>Buscando algum bixinho especial?</span></h3>
 
                     <picture>
-                       <img src="image/afwd.png" alt="">
-                       <img src="image/safas.png" alt="">
-                       <img src="image/asgk.png" alt="">
+                       <img srcset="image/cachorro-com-teclado.png" alt="">
+                       <img src="image/gato-com-celular.png" alt="">
+                       <img src="image/coelho-com-celular.png" alt="">
                     </picture>
 
                     <br>
-                   <a href=""> <button class="button-27" role="button">Venha e adote um pet</button> </a>
+
+                  <button class="button-27" role="button">Venha e adote um pet</button>
+                  
                 </div>  
             </section>
         
@@ -177,32 +179,66 @@
 
         <!-- Inicio do rodapé -->
         <footer class="footer">
-            <div class="footer-container">
-                
-                <div class="first-collumn-footer"> 
-                    <h3 class="titulo-footer">Logo</h3>
-                    <p>Contact Us</p>
-                    <p>5343 Somewhere over the rainbow</p>
-                    <p><a href="mailto:name@email.com">Email Us</a></p>
-                    <p>Bla bla All Rights Reserved</p>
+            <div class="footer-content">
+                <div class="info-footer">
+                    <div class="sobre-nos">
+                        <h3>Sobre nós</h3>
+                        <p>Texto aleatório que eu mesmo escrevi Texto aleatório que eu mesmo escrevi Texto aleatório que eu mesmo escrevi 
+                            Texto aleatório que eu mesmo escrevi Texto aleatório que eu mesmo escrevi
+                        </p>
+                    </div>
+                    <div class="link1">
+                        <h3>Institucional</h3>
+                        <ul>
+                            <li><a href="#">Políticas do site</a></li>
+                            <li><a href="#">Trabalhe conosco</a></li>
+                            <li><a href="#">Políticas de privacidade</a></li>
+                            <li><a href="#">Código de defesa do consumidor</a></li> 
+                        </ul>
+                    </div>
+                    <div class="atendimento">
+                        <h3>Atendimento</h3>
+                        <p>Horário de atendimento:<br>
+                            08:00 às 20:00<br>
+                            Segunda a Sábado<br>
+                            horário de Brasília<br>
+                            (Exceto domingo e feriados)<br>
+                            emailAtendimento@gmail.com
+                        </p>
+                    </div>
                 </div>
-
-                <div class="second-collumn-footer">
-                    <h3 class="titulo-footer">Medias Sociais</h3>
-                    <p>Insta</p>
-                    <p>Discord</p>
-                    <p>Twitter</p>
+                <div class="promotions">
+                    <form action="" class="form-promotions">
+                        <input type="text" placeholder="Digite seu e-mail aqui para receber novidades e promoções">
+                        <button class="btn-promotions">Enviar</button>
+                    </form>
                 </div>
-
-                <div class="third-column-footer">
-                    <h3 class="titulo-footer">Legal</h3>
-                    <p>Politica de Privacidade</p>
-                    <p>Termos de Uso</p>
-                    <p>Sla</p>
+                <div class="social-btns">
+                    <div class="ajustes-social-btns">
+                        <button class="social-media-btn">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                        <button class="social-media-btn">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="social-media-btn">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                        <button class="social-media-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                    </div>
+            </div>
+            </div>
+            <div class="suporte-tecnico-container">
+                <div class="suporte-tecnico">
+                    <h2 style="font-size: 1.5rem; font-weight: 900; padding: 1%;">Está com alguma dúvida?</h2>
+                    <a href="#" style="font-size: 120%; padding: 1%;">Clique aqui para que possamos te ajudar.</a>
                 </div>
             </div>
         </footer>
         <!-- Término do rodapé -->
+
     </div>
 </body>
 
